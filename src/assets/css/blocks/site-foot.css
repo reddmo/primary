@@ -1,0 +1,40 @@
+.site-foot {
+  margin-block-start: var(--space-l-xl);
+  padding: var(--space-s-m);
+  color: var(--color-text);
+}
+
+.site-foot__inner {
+  display: flex;
+  gap: var(--space-xs) var(--space-s);
+  justify-content: center;
+  align-items: center;
+}
+
+:not(nav#social).site-foot__inner {
+  flex-wrap: wrap;
+}
+
+.site-foot svg {
+  inline-size: 1em;
+  block-size: 0.9em;
+}
+
+.site-foot .creator {
+  text-decoration: none;
+}
+
+.site-foot .creator {
+  text-decoration: none;
+}
+.site-foot .creator:hover {
+  color: transparent;
+  background-image: var(--gradient-rainbow);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+}
+
+.site-foot .creator:hover svg {
+  color: var(--color-text);
+}
