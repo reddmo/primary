@@ -1,27 +1,30 @@
 /* Set up for old browsers. I set the medium Figtree as regular, as I prefer it a little bolder. */
 @supports not (font-variation-settings: normal) {
   @font-face {
-    font-family: Figtree;
+    font-family: Verdana;
     font-style: normal;
     font-display: swap;
     font-weight: 800;
-    src: local(''), url('/assets/fonts/figtree/figtree-extrabold.woff2') format('woff2');
+    src: local(''),   url(/assets/fonts/verdana/Verdana.woff2) format('woff2'),
+    url(/assets/fonts/verdana/Verdana.woff) format('woff');
   }
 
   @font-face {
-    font-family: Figtree;
+    font-family: Verdana;
     font-style: normal;
     font-display: swap;
     font-weight: 600;
-    src: local(''), url('/assets/fonts/figtree/figtree-semibold.woff2') format('woff2');
+    src: local(''),   url(/assets/fonts/verdana/Verdana.woff2) format('woff2'),
+    url(/assets/fonts/verdana/Verdana.woff) format('woff');
   }
 
   @font-face {
-    font-family: Figtree;
+    font-family: Verdana;
     font-style: normal;
     font-display: swap;
     font-weight: 500;
-    src: local(''), url('/assets/fonts/figtree/figtree-medium.woff2') format('woff2');
+    src: local(''),   url(/assets/fonts/verdana/Verdana.woff2) format('woff2'),
+    url(/assets/fonts/verdana/Verdana.woff) format('woff');
   }
 
   @font-face {
@@ -45,6 +48,26 @@
     font-style: normal;
     font-display: swap;
   }
+  
+
+@font-face {
+  font-family: 'Palatino';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local(''),
+    url(/assets/fonts/palatino/palatino-regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local(''),
+  url(/assets/fonts/verdana/Verdana.woff2) format('woff2'),
+    url(/assets/fonts/verdana/Verdana.woff) format('woff');
+}
 
   @font-face {
     font-family: 'Figtree';

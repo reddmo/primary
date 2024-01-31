@@ -1,9 +1,9 @@
 .card {
   background-color: var(--color-card);
 /*  border: 3px solid var(--bg-color-accent); */
-  color: var(--text-color);
+  color: var(--color-card-text);
   text-wrap: balance;
-  padding: var(--space-s-m);
+  padding: var(--space-m-l);
   border-radius: var(--border-radius);
   max-inline-size: unset;
   box-shadow: 2px 2px 1px var(--card-shadow);
