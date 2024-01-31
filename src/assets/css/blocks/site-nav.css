@@ -10,8 +10,8 @@
 .site-nav a {
 /*  --text-color: var(--text-color);
   --background-color: var(--bg-color); */
-/*  --border-color: var(--text-color); */
-  background-color: var(--background-color);
+  --border-color: var(--text-color); 
+  background-color: var(--bg-color);
   color: var(--text-color);
   padding: var(--space-s);
   text-decoration: none;
@@ -22,17 +22,17 @@
 
 /* Change the border-color on :hover and :focus */
 .site-nav a:where(:hover, :focus) {
-  --background-color: transparent;
-  --text-color: var(--color-link);
-  --border-color: var(--bg-color);
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-color: var(--text-color);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
 .site-nav [aria-current='page'],
 .site-nav [data-state='active'] {
-  --background-color: transparent;
-  --text-color: var(--color-date);
-  --border-color: var(--bg-color);
+  background-color: var(--bg-color);
+  color: var(--color-date);
+  border-color: var(--color-date);
 }
 
 @media screen(md) {

@@ -1,12 +1,12 @@
 .card {
   background-color: var(--color-card);
-/*  border: 3px solid var(--bg-color-accent); */
+  border: 3px solid var(--bg-color-accent);
   color: var(--color-card-text);
   text-wrap: balance;
   padding: var(--space-m-l);
   border-radius: var(--border-radius);
   max-inline-size: unset;
-  box-shadow: 2px 2px 1px var(--card-shadow);
+/*  box-shadow: 4px 4px 2px var(--card-shadow); */
 }
 
 .card ::selection {
