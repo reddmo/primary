@@ -17,7 +17,7 @@
 .card .post-tag {
   --button-bg: var(--color-link);
   --button-text: var(--bg-color);
-/*  --button-border: var(--bg-color-accent-2); */
+  --button-border: none;
   margin-inline-start: var(--space-s-m);
 }
 

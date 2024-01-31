@@ -8,11 +8,9 @@
 }
 
 .site-nav a {
-/*  --text-color: var(--text-color);
-  --background-color: var(--bg-color); */
-  --border-color: var(--text-color); 
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  --menu-color: var(--text-color);
+  --background-color: var(--bg-color);
+  --border-color: var(--bg-color-accent-2); 
   padding: var(--space-s);
   text-decoration: none;
   display: block;
@@ -22,17 +20,17 @@
 
 /* Change the border-color on :hover and :focus */
 .site-nav a:where(:hover, :focus) {
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  border-color: var(--text-color);
+  --background-color: var(--menu-color);
+  --menu-color: var(--bg-color);
+  --border-color: var(--bg-color);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
 .site-nav [aria-current='page'],
 .site-nav [data-state='active'] {
-  background-color: var(--bg-color);
-  color: var(--color-date);
-  border-color: var(--color-date);
+  --background-color: var(--menu-color);
+  --menu-color: var(--bg-color);
+  --border-color: var(--bg-color);
 }
 
 @media screen(md) {
@@ -42,23 +40,23 @@
   }
 
   .site-nav a {
-/*    --text-color: var(--text-color); */
-    --background-color: var(--text-color);
+    --menu-color: var(--text-color);
+    --background-color: transparent;
     --border-color: transparent;
     --text-decoration: transparent;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--background-color);
+    color: var(--menu-color);
     padding: var(--space-xs) 0.2em;
     text-decoration-line: underline;
     text-decoration-color: var(--text-decoration, transparent);
     text-decoration-thickness: 3px;
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.2em; 
   }
 
   /* Change the border-color on :hover and :focus */
   .site-nav a:where(:hover, :focus) {
-    --text-decoration: var(--text-color);
-    color: var(--text-color);
+    --text-decoration: var(--color-text-accent);
+    --menu-color: var(--text-color);
     --background-color: transparent;
   }
 
@@ -66,7 +64,7 @@
   .site-nav [aria-current='page'],
   .site-nav [data-state='active'] {
     --text-decoration: var(--text-color);
-    color: var(--color-date);
+    --menu-color: var(--color-date);
     --background-color: transparent;
   }
 }

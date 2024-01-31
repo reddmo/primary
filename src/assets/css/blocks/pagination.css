@@ -35,7 +35,7 @@
 }
 
 .pagination li:has(a[aria-current='page']) {
-  --pagination-bg: var(--color-secondary);
+  --pagination-bg: var(--bg-color);
   --pagination-border: var(--color-secondary);
-  --pagination-text: var(--color-base-light);
+  --pagination-text: var(--text-color);
 }

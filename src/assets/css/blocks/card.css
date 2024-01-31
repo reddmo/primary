@@ -1,6 +1,6 @@
 .card {
   background-color: var(--color-card);
-  border: 3px solid var(--bg-color-accent);
+/*  border: 3px solid var(--bg-color-accent); */
   color: var(--color-card-text);
   text-wrap: balance;
   padding: var(--space-m-l);
