@@ -5,33 +5,22 @@
     {
       "name": "Display",
       "description": "Display font stack for headings and large text.",
-      "value": ["Redhat", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["Palatino","Verdana","Redhat", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
       "name": "Base",
       "description": "Base font stack for body text.",
-      "value": [
-        "Figtree",
-        "Optima",
-        "Candara",
-        "Noto Sans",
-        "source-sans-pro",
-        "sans-serif"
-      ]
+      "value": ["Verdana","Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
       "name": "Mono",
       "description": "Monospace font for code and preformatted text.",
-      "value": [
-        "RobotoMono",
-        "ui-monospace",
-        "Cascadia Code",
-        "Source Code Pro",
-        "Menlo",
-        "Consolas",
-        "DejaVu Sans Mono",
-        "monospace"
-      ]
+      "value": ["RobotoMono", "monospace"]
+    },
+    {
+      "name": "Header",
+      "description": "Header",
+      "value": ["Sofia"]
     }
   ]
 }

@@ -5,9 +5,9 @@
 }
 
 .post-tag {
-  --button-bg: var(--color-text);
-  --button-text: var(--color-bg);
-  --button-border: var(--color-text);
+/*  --button-bg: var(--text-color);
+  --button-text: var(--bg-color);
+  --button-border: var(--text-color); */
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
   padding: 0.1rem 0.625rem;
@@ -15,9 +15,9 @@
 }
 
 .card .post-tag {
-  --button-bg: var(--color-bg-accent-2);
-  --button-text: var(--color-text);
-  --button-border: var(--color-bg-accent-2);
+  --button-bg: var(--color-link);
+  --button-text: var(--bg-color);
+/*  --button-border: var(--bg-color-accent-2); */
   margin-inline-start: var(--space-s-m);
 }
 

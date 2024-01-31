@@ -3,9 +3,9 @@
 }
 
 .pagination li {
-  color: var(--pagination-text, var(--color-text));
-  background-color: var(--pagination-bg, var(--color-bg));
-  border: 3px solid var(--pagination-border, var(--color-bg-accent));
+  color: var(--pagination-text, var(--text-color));
+  background-color: var(--pagination-bg, var(--bg-color));
+  border: 3px solid var(--pagination-border, var(--bg-color-accent));
   border-radius: var(--border-radius);
 }
 
@@ -30,8 +30,8 @@
 }
 
 .pagination li:has(a:hover) {
-  --pagination-bg: var(--color-bg-accent);
-  --pagination-border: var(--color-bg-accent);
+  --pagination-bg: var(--bg-color-accent);
+  --pagination-border: var(--bg-color-accent);
 }
 
 .pagination li:has(a[aria-current='page']) {

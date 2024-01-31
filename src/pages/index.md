@@ -1,17 +1,15 @@
 ---
 permalink: /index.html
-title: ' Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: ' stuff&things'
+description: 'A site about stuff & things.'
 layout: 'home'
 blog:
-  title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+  title: 'blog'
+  intro: "Some posts about stuff & things."
 ---
 
-## An Eleventy starter
+## I've redesigned the site.
 
-This [Eleventy](https://www.11ty.dev/) starter is based on [Andy Bell's](https://mastodon.social/@andy@bell.bz) talk 'Be the browser’s mentor, not its micromanager' and its companion website buildexcellentwebsit.es.
+It's built with [Eleventy](https://www.11ty.dev/) and uses the (excellent) [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent) starter. Additionally, some of the great icons you see are from [Feather Icons](https://feathericons.com) and [Lucide](https://lucide.dev/).
 
-In his words, it's about hinting the browser rather than micromanaging it, using progressive enhancement, CSS layout, fluid type & spacing, as well as modern CSS features.
-
-This way we can shape frontends that look good to everyone, regardless of device, connection speed or context.
+I'm really pleased with the ease of use of both. I'm able to update this site and add elements quickly and, generally speaking, easily. I expect to do some more redesigning here but was focused on the initial setup and migrating the old design from the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog), which is also a very good starter.

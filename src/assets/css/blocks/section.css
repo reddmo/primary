@@ -3,8 +3,22 @@
 }
 
 .section__inner {
-  background-color: var(--spot-color, var(--color-bg-accent));
-  color: var(--color-text);
+  background-image: linear-gradient(
+  var(--color-head) 0 8%, 
+  var(--bg-color) 8% 10%, 
+  var(--color-date) 10% 20%, 
+  var(--bg-color) 20% 21%, 
+  var(--color-link) 21% 79%, 
+  var(--bg-color) 79% 80%, 
+  var(--color-date) 80% 90%, 
+  var(--bg-color) 90% 92%, 
+  var(--color-head) 92% 100%);
+  color: #ffffff;
+}
+
+.section__inners {
+  background: var(--bg-color);
+  color: #000000;
 }
 
 .section blockquote {

@@ -6,8 +6,8 @@
 */
 
 body {
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: var(--text-color);
+  background-color: var(--bg-color);
   font-size: var(--size-step-0);
   font-family: var(--font-base);
   line-height: 1.4;
@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 500;
-  accent-color: var(--color-primary);
+ /* accent-color: var(--color-primary); */
 }
 
 main {
@@ -29,7 +29,7 @@ h3 {
   line-height: 1.2;
   letter-spacing: var(--tracking-s);
   font-weight: 700;
-  font-family: var(--font-display);
+  font-family: var(--font-header);
 }
 
 h1 {
@@ -71,6 +71,7 @@ svg {
   block-size: 2ex;
   inline-size: auto;
   flex: none;
+  color: var(--color-link);
 }
 
 [role='list'] {
@@ -80,7 +81,7 @@ svg {
 /* Base interactive elements */
 
 a {
-  color: currentcolor;
+  color: var(--color-link);
 }
 
 a:hover {
@@ -102,8 +103,8 @@ main:focus {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background-color: var(--color-text);
-  color: var(--color-bg);
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .preload-transitions * {

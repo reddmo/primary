@@ -1,32 +1,32 @@
 module.exports = {
-  url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Eleventy Excellent',
+  url: process.env.URL || 'https://itc.reddmo.com',
+  siteName: ' stuff&things',
   siteDescription:
-    'Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.',
+    'some stuff & things',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
   skipContent: 'Skip to content',
-  author: 'Lene Saile', // i.e. Lene Saile - page / blog author's name. Must be set.
+  author: 'Jason Moser', // i.e. Lene Saile - page / blog author's name. Must be set.
   authorAvatar: '/favicon.png', // for h-card, defaults to favicon
   authorEmail: '', // i.e. hola@lenesaile.com - email of the author
   authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
-  creator: 'Lene Saile', // i.e. Lene Saile - creator's (developer) name.
-  creatorEmail: 'hola@lenesaile.com', // i.e. hola@lenesaile.com
-  creatorWebsite: 'https://www.lenesaile.com', // i.e. https.://www.lenesaile.com
-  creatorSocial: 'https://front-end.social/@lene', // i.e. https.://www.lenesaile.com
-  themeColor: '#DD4462', //  Manifest: defines the default theme color for the application
-  themeBgColor: '#FBFBFB', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
+  creator: 'Jason Moser', // i.e. Lene Saile - creator's (developer) name.
+  creatorEmail: 'admin@reddmo.com', // i.e. hola@lenesaile.com
+  creatorWebsite: 'https://itc.reddmo.com', // i.e. https.://www.lenesaile.com
+  creatorSocial: 'https://hachyderm.com/@jasonmoser', // i.e. https.://www.lenesaile.com
+  themeColor: '--text-color', //  Manifest: defines the default theme color for the application
+  themeBgColor: '--background-color', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
-    opengraph_default: '/assets/images/template/opengraph-default.jpg', // fallback/default meta image
+    opengraph_default: '/assets/images/template/stuffandthings.PNG', // fallback/default meta image
     opengraph_default_alt:
-      'Visible content: Eleventy starter based on workflow for Cube CSS, Every Layout, Design Tokens and Tailwind for uitility, based on the concepts explained in buildexcellentwebsit.es' // alt text for default meta image
+      'An image with the words Stuff & Things and tool icons' // alt text for default meta image
   },
   blog: {
     // this is for the rss feed
-    name: 'My Web Development Blog',
+    name: 'stuff & things',
     description:
-      'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+      'A hodge podge of stuff & things on various topics.',
     tagSingle: 'Tag',
     tagPlural: 'Tags',
     // feed links are looped over in the head.
@@ -46,7 +46,7 @@ module.exports = {
     closedText: 'Menu'
   },
   themeSwitch: {
-    title: 'Theme',
+    title: 'mode',
     light: 'light',
     dark: 'dark'
   },

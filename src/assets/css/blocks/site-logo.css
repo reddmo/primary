@@ -3,6 +3,6 @@
   padding: var(--space-s) 0;
   font-size: var(--size-step-0);
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
 }

@@ -10,7 +10,7 @@
 
 .styleguide section {
   padding: var(--space-l-xl);
-  outline: 2px solid var(--color-bg-accent); /* Increase the outline thickness for better visibility */
+  outline: 2px solid var(--bg-color-accent); /* Increase the outline thickness for better visibility */
   outline-offset: -1px; /* Negative value to make outlines overlap */
 }
 
@@ -42,11 +42,11 @@
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: center;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--text-color);
 }
 
 .styleguide .space {
-  background-color: var(--color-text);
+  background-color: var(--text-color);
   display: block;
 }
 

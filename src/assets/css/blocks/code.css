@@ -10,7 +10,7 @@ code {
 }
 
 pre {
-  --dark-bg: color-mix(in oklab, var(--color-bg) 92%, black);
+  --dark-bg: color-mix(in oklab, var(--bg-color) 92%, black);
   grid-column: popout !important;
 }
 
@@ -19,7 +19,7 @@ pre {
   font-family: var(--font-mono);
   font-size: var(--size-step-min-1);
   line-height: 1.4;
-  background-color: var(--color-bg-accent);
+  background-color: var(--bg-color-accent);
   padding: 0.1em 0.4em;
   border-radius: var(--border-radius);
 }
@@ -39,8 +39,8 @@ pre[class*='language-'] {
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  color: var(--color-text);
-  background: var(--color-bg);
+  color: var(--text-color);
+  background: var(--bg-color);
   line-height: 1.5;
   border-radius: var(--border-radius);
   hyphens: none;
@@ -56,7 +56,7 @@ pre[class*='language-'] {
 :root[data-theme='light'] {
   code[class*='language-'],
   pre[class*='language-'] {
-    background-color: var(--color-bg-accent);
+    background-color: var(--bg-color-accent);
   }
 }
 
@@ -71,11 +71,11 @@ pre[class*='language-'] {
 :where(:not(pre)) > code {
   position: relative;
   top: -0.1em;
-  background-color: var(--color-bg-accent);
+  background-color: var(--bg-color-accent);
 }
 
 :where(:not(a, pre, blockquote)) > code {
-  color: var(--color-text-accent);
+  color: var(--text-color-accent);
 }
 
 pre[class*='language-'] {

@@ -10,7 +10,7 @@
   --tracking-s: -0.075ch;
   --tracking-wide: 0.05ch;
 
-  --gradient-rainbow: linear-gradient(
+/*  --gradient-rainbow: linear-gradient(
     90deg,
     var(--color-primary),
     var(--color-secondary),
@@ -27,42 +27,80 @@
     var(--color-primary) 0 85%,
     var(--color-secondary) 0 92%,
     var(--color-tertiary) 0 100%
-  );
+  ); */
 }
 
 :root,
 :root[data-theme='light'] {
   color-scheme: light dark;
-  --color-text: var(--color-base-dark);
-  --color-bg: var(--color-base-light);
+  --bg-color: #f2f1ef;
+  --text-color: #050709;
+  --bg-color-glare: #ffffff;
+  --color-primary: #1c9d68;
+  --color-primary-glare: #f4d0df;
+  --color-secondary: #c44601;
+  --color-secondary-glare: #D8E2F4;
+  --color-tertiary: #353b40;
+  --color-quadrary: #e76e75;
+  --color-card: #dadfe1;
+  --color-card-text: #050709;
+  --color-card-border: #ad9281;
+  --color-card-link: #e65722;
+  --card-shadow: #252424;
+  --color-link: #aa2e00;
+  --color-head: #34515e; 
+  --color-date: #e65722;
+  --color-title: #fcd031; 
+/*  --text-color: var(--color-base-dark);
+  --bg-color: var(--color-base-light);
   --color-base: var(--color-base-highlight);
   --color-primary: var(--color-primary-highlight);
   --color-secondary: var(--color-secondary-highlight);
-  --color-tertiary: var(--color-tertiary-highlight);
+  --color-tertiary: var(--color-tertiary-highlight); */
 
   /* modify base colors with color-mix - https://caniuse.com/?search=color-mix */
-  --color-text-accent: color-mix(in oklab, var(--color-base-dark) 80%, var(--color-text));
-  --color-bg-accent: color-mix(in oklab, var(--color-bg) 90%, var(--color-text));
-  --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 70%, var(--color-text));
-}
+ --text-color-accent: color-mix(in oklab, var(--color-base-dark) 80%, var(--text-color));
+  --bg-color-accent: color-mix(in oklab, var(--bg-color) 90%, var(--text-color));
+  --bg-color-accent-2: color-mix(in oklab, var(--bg-color) 70%, var(--text-color)); 
+} 
 
 /* Dark Color Scheme (System Preference) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: var(--color-base-light);
-    --color-bg: var(--color-base-dark);
+		--bg-color: #252424;
+		--text-color: #f2f1ef;
+	    --bg-color-glare: #000000;
+	    --color-primary: #1c9d68;
+	    --color-primary-glare: #f4d0df;	  
+	    --color-secondary: #87d8a6;
+	    --color-secondary-glare: #d8e2f4;
+	    --color-tertiary: #f3f3f3;
+	    --color-quadrary: #e76e75;
+	    --color-card: #050709;
+	    --color-card-text: #f2f1ef;
+	    --color-card-border: #ad9281;
+	    --color-card-link: #f2a127;  
+	    --card-shadow: #e6e6e6;    
+        --color-link: #f2a127;
+	    --color-head: #ff6347; 
+	    --color-date: #00bfff;
+	    --color-title: #006bc5;   
+	    
+	    }
+/*	--text-color: var(--color-base-light);
+    --bg-color: var(--color-base-dark); */
 
     /* less "intensity" with color-mix */
-    --color-text-accent: color-mix(
+ /*   --text-color-accent: color-mix(
       in oklab,
       var(--color-base-light) 70%,
-      var(--color-bg)
+      var(--bg-color)
     );
-    --color-bg-accent: color-mix(in oklab, var(--color-bg) 92%, var(--color-text));
-    --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
+    --bg-color-accent: color-mix(in oklab, var(--bg-color) 92%, var(--text-color));
+    --bg-color-accent-2: color-mix(in oklab, var(--bg-color) 80%, var(--text-color)); */
 
     /* add opacity with color-mix */
-    --color-primary: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);
+/*    --color-primary: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);
     --color-secondary: color-mix(
       in oklab,
       var(--color-secondary-highlight),
@@ -72,26 +110,42 @@
       in oklab,
       var(--color-tertiary-highlight),
       transparent 20%
-    );
+    ); */
 
     /* desaturate with CSS Relative colors */
-    @supports (color: hsl(from white h s l)) {
+/*    @supports (color: hsl(from white h s l)) {
       --color-primary: hsl(from var(--color-primary-highlight) h calc(s - 0.2) l);
       --color-secondary: hsl(from var(--color-secondary-highlight) h calc(s - 0.2) l);
       --color-tertiary: hsl(from var(--color-tertiary-highlight) h calc(s - 0.2) l);
     }
-  }
+  } */
 }
 
 /* Dark Color Scheme (Override) */
 :root[data-theme='dark'] {
-  --color-text: var(--color-base-light);
-  --color-bg: var(--color-base-dark);
+		--bg-color: #252424;
+		--text-color: #f2f1ef;
+	    --bg-color-glare: #000000;
+	    --color-primary: #1c9d68;
+	    --color-primary-glare: #f4d0df;	  
+	    --color-secondary: #87d8a6;
+	    --color-secondary-glare: #d8e2f4;
+	    --color-tertiary: #f3f3f3;
+	    --color-quadrary: #e76e75;
+	    --color-card: #050709;
+	    --color-card-text: #f2f1ef;
+	    --color-card-border: #ad9281;
+	    --color-card-link: #f2a127;  
+	    --card-shadow: #e6e6e6;    
+        --color-link: #f2a127;
+	    --color-head: #ff6347; 
+	    --color-date: #00bfff;
+	    --color-title: #006bc5;
 
   /* less "intensity" with color-mix */
-  --color-text-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--color-bg));
-  --color-bg-accent: color-mix(in oklab, var(--color-bg) 92%, var(--color-text));
-  --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 80%, var(--color-text));
+  --text-color-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--bg-color));
+  --bg-color-accent: color-mix(in oklab, var(--bg-color) 92%, var(--text-color));
+  --bg-color-accent-2: color-mix(in oklab, var(--bg-color) 80%, var(--text-color));
 
   /* add opacity with color-mix */
   --color-primary: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);

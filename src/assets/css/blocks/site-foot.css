@@ -1,7 +1,7 @@
 .site-foot {
   margin-block-start: var(--space-l-xl);
   padding: var(--space-s-m);
-  color: var(--color-text);
+  color: var(--text-color);
 }
 
 .site-foot__inner {
@@ -36,5 +36,5 @@
 }
 
 .site-foot .creator:hover svg {
-  color: var(--color-text);
+  color: var(--text-color);
 }

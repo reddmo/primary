@@ -3,7 +3,7 @@
   viewBox="0 0 24 24"
   width="1em"
   height="1em"
-  fill="var(--color-bg)"
+  fill="var(--bg-color)"
   stroke="currentColor"
   stroke-width="2"
   xmlns="http://www.w3.org/2000/svg"

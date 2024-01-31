@@ -5,7 +5,7 @@ schema: blog
 
 <article class="region blog" style="--region-space-top: var(--space-xl-2xl)">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
+    <h1 style="color: var(--color-head)">{{ title }}</h1>
 
     <!-- image -->
     {% if image %}{% eleventyImage image, alt or title, null, "eager", "feature" %} {%
@@ -16,7 +16,7 @@ schema: blog
     <p class="feature text-step-min-1">© {{ credit }}</p>
     {% endif %}
 
-    <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s)">
+    <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s); color: var(--color-date)">
       <!-- date -->
       {% set definedDate = date %} {% include "components/date.njk" %}
 
@@ -29,6 +29,21 @@ schema: blog
     </p>
 
     {{ content | safe }}
+    
+
+  <h4 style="color: var(--color-date)">Other Posts</h4>
+    {%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<ul>
+	{%- if previousPost %}{% include 'svg/chevrons-right.svg' %} Newer post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}<br>
+	
+	{%- if nextPost %}{% include 'svg/chevrons-left.svg' %} Older post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+</ul>
+{%- endif %}
+{%- endif %}
+
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
@@ -40,5 +55,7 @@ schema: blog
       src="{{ meta.authorAvatar | url | absoluteUrl(meta.url) }}"
       alt="{{ meta.author }}"
     />
+    
+
   </div>
 </article>

@@ -8,9 +8,9 @@
 }
 
 .site-nav a {
-  --text-color: var(--color-text);
-  --background-color: var(--color-bg);
-  --border-color: var(--color-bg-accent-2);
+/*  --text-color: var(--text-color);
+  --background-color: var(--bg-color); */
+/*  --border-color: var(--text-color); */
   background-color: var(--background-color);
   color: var(--text-color);
   padding: var(--space-s);
@@ -22,17 +22,17 @@
 
 /* Change the border-color on :hover and :focus */
 .site-nav a:where(:hover, :focus) {
-  --background-color: var(--color-text);
-  --text-color: var(--color-bg);
-  --border-color: var(--color-bg);
+  --background-color: transparent;
+  --text-color: var(--color-link);
+  --border-color: var(--bg-color);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
 .site-nav [aria-current='page'],
 .site-nav [data-state='active'] {
-  --background-color: var(--color-text);
-  --text-color: var(--color-bg);
-  --border-color: var(--color-bg);
+  --background-color: transparent;
+  --text-color: var(--color-date);
+  --border-color: var(--bg-color);
 }
 
 @media screen(md) {
@@ -42,11 +42,11 @@
   }
 
   .site-nav a {
-    --text-color: var(--color-text);
-    --background-color: transparent;
+/*    --text-color: var(--text-color); */
+    --background-color: var(--text-color);
     --border-color: transparent;
     --text-decoration: transparent;
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
     color: var(--text-color);
     padding: var(--space-xs) 0.2em;
     text-decoration-line: underline;
@@ -57,16 +57,16 @@
 
   /* Change the border-color on :hover and :focus */
   .site-nav a:where(:hover, :focus) {
-    --text-decoration: var(--color-text-accent);
-    --text-color: var(--color-text);
+    --text-decoration: var(--text-color);
+    color: var(--text-color);
     --background-color: transparent;
   }
 
   /* Change border-color and color for the active page */
   .site-nav [aria-current='page'],
   .site-nav [data-state='active'] {
-    --text-decoration: var(--color-primary);
-    --text-color: var(--color-primary);
+    --text-decoration: var(--text-color);
+    color: var(--color-date);
     --background-color: transparent;
   }
 }

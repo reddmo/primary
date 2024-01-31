@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: blog
 description: 'All blog posts can be found here'
 layout: blog
 pagination:
@@ -9,4 +9,3 @@ permalink: 'blog/page-{{ pagination.pageNumber }}/index.html'
 redirectFrom: ['/blog/', '/blog/page-0/']
 ---
 
-This blog has a pagination of {{ pagination.size }} posts per page.

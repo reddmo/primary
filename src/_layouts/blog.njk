@@ -3,17 +3,16 @@ layout: base
 masonry: true
 ---
 
-<article class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-secondary)">
-    <div
-      class="section__inner flow region"
-      style="--region-space-top: var(--space-xl-2xl)"
-    >
-      <h1 class="text-center text-base-light">{{ title }}</h1>
-    </div>
-    {% include 'svg/divider-edgy.svg' %}
-  </header>
 
+ <header class="section spot-color-dark">
+ <div class="section__inner">
+    <div class="wrapper flow region">
+      <h1 class="text-center text-base-light" style="color: var(--bg-color); text-shadow: 1px 1px 1px var(--text-color)">{{ title }}</h1>
+    </div>
+    </div>
+ <!--   {% include 'svg/divider-edgy.svg' %} -->
+  </header>
+<article class="wrapper">
 	<div class="region flow prose"  style="--region-space-top: var(--space-xl-2xl)">  {{ content | safe }}</div>
 
   <ul

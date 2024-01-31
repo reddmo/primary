@@ -1,20 +1,22 @@
 .card {
-  background-color: var(--color-bg-accent);
-  border: 3px solid var(--color-bg-accent);
-  color: var(--color-text);
+  background-color: var(--color-card);
+/*  border: 3px solid var(--bg-color-accent); */
+  color: var(--text-color);
+  text-wrap: balance;
   padding: var(--space-s-m);
   border-radius: var(--border-radius);
   max-inline-size: unset;
+  box-shadow: 2px 2px 1px var(--card-shadow);
 }
 
 .card ::selection {
-  color: var(--color-dark);
-  background-color: var(--color-secondary);
+  color: var(--text-color);
+  background-color: var(--color-card);
 }
 
 .card h2,
 .card h3 {
-  font-family: var(--font-base);
+  font-family: var(--font-header);
   font-size: var(--size-step-2);
   font-weight: 700;
 }
@@ -25,7 +27,7 @@
 
 .card:hover,
 .card:focus-within {
-  border: 3px solid var(--color-primary);
+  border: 3px solid var(--color-card-link);
 }
 
 /* 'clickable' */
