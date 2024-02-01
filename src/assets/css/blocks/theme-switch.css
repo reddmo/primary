@@ -4,9 +4,17 @@
 }
 
 .theme-switch .button {
-  --button-border: var(--bg-color-accent-2);
-  border-radius: var(--border-radius);
-  font-size: var(--size-step-min-1);
+  --button-border: var(--color-date);
+/*  border-radius: 50%; */
+  font-size: var(--size-step-5);
   padding: 0.1rem 0;
+  font-weight: 600;
+}
+
+.theme-switch .button2 {
+  --button-border: var(--color-date);
+/*  border-radius: 50%; */
+  font-size: var(--size-step-0);
+  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
   font-weight: 600;
 }

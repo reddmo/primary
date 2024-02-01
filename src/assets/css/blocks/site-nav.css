@@ -10,12 +10,12 @@
 .site-nav a {
   --menu-color: var(--text-color);
   --background-color: var(--bg-color);
-  --border-color: var(--bg-color-accent-2); 
+  --border-color: var(--color-date); 
   padding: var(--space-s);
   text-decoration: none;
   display: block;
   border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
+  border: 1.25px solid var(--border-color);
 }
 
 /* Change the border-color on :hover and :focus */
@@ -30,7 +30,7 @@
 .site-nav [data-state='active'] {
   --background-color: var(--menu-color);
   --menu-color: var(--bg-color);
-  --border-color: var(--bg-color);
+  --border-color: var(--text-color);
 }
 
 @media screen(md) {
@@ -66,5 +66,6 @@
     --text-decoration: var(--text-color);
     --menu-color: var(--color-date);
     --background-color: transparent;
+    --border-color: var(--bg-color);
   }
 }

@@ -11,15 +11,15 @@
   text-align: center;
 }
 
-.button2 {
-  color: var(--button-text, var(--text-color));
+ .button2 {
+ color: var(--button-text, var(--text-color));
   background-color: var(--button-bg, var(--bg-color));
  /* border: 2px solid var(--button-border, var(--text-color));
   border-radius: var(--border-radius); */
   display: inline-block;
   font: inherit;
-  padding: 0.3rem var(--space-s);
-  font-weight: 700;
+ /* padding: 0.3rem var(--space-s);
+  font-weight: 700; */
   text-decoration: none;
   text-align: center;
 }
