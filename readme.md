@@ -15,7 +15,6 @@ Easy to use Eleventy starter, based on the workflow suggested by Andy Bell's [bu
 
 https://eleventy-excellent.netlify.app/
 
-```
 
 ## Built with Eleventy Excellent
 
