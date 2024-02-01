@@ -1,8 +1,8 @@
 const storageKey = 'theme-preference';
 
 // get labels from meta
-const lightLabel = '{{ meta.themeSwitch.light }}';
-const darkLabel = '{{ meta.themeSwitch.dark }}';
+const lightLabel = '{% include "svg/sun.svg" %}';
+const darkLabel = '{% include "svg/moon.svg" %}';
 
 const onClick = () => {
   // flip current value

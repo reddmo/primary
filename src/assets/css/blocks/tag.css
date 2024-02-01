@@ -5,9 +5,9 @@
 }
 
 .post-tag {
-/*  --button-bg: var(--text-color);
+  --button-bg: var(--color-link);
   --button-text: var(--bg-color);
-  --button-border: var(--text-color); */
+  --button-border: var(--color-link);
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
   padding: 0.1rem 0.625rem;
@@ -15,7 +15,7 @@
 }
 
 .card .post-tag {
-  --button-bg: var(--color-link);
+  --button-bg: var(--color-date);
   --button-text: var(--bg-color);
   --button-border: none;
   margin-inline-start: var(--space-s-m);
