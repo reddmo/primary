@@ -43,7 +43,7 @@ const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-const filters = require('./config/filters/index.js')
+
 
 
 const markdownLib = require('./config/plugins/markdown.js');
@@ -82,11 +82,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
   
-    // Filters
-    eleventyConfig.addFilter('getWebmentionsForUrl', Object.keys);
-    eleventyConfig.addFilter('size', Object.keys);
-    eleventyConfig.addFilter('webmentionsByType', Object.keys);  
-    eleventyConfig.addFilter('readableDateFromISO', Object.keys);
   
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('eleventyImage', imageShortcode);
