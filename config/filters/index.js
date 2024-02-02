@@ -21,7 +21,6 @@ const toAbsoluteUrl = url => {
   return `${siteUrl}/${relativeUrl}`;
 };
 
-
 /** Converts the given date string to ISO8610 format. */
 const toISOString = dateString => dayjs(dateString).toISOString();
 
