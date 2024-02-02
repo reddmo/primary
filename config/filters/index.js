@@ -52,6 +52,8 @@ const minifyJs = async (code, ...rest) => {
   }
 };
 
+
+
 // source: https://github.com/bnijenhuis/bnijenhuis-nl/blob/main/.eleventy.js
 const splitlines = (input, maxCharLength) => {
   const parts = input.split(' ');
@@ -74,6 +76,7 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
+
 module.exports = {
   toISOString,
   formatDate,
@@ -81,5 +84,5 @@ module.exports = {
   stripHtml,
   minifyCss,
   minifyJs,
-  splitlines, 
+  splitlines
 };

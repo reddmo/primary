@@ -1,5 +1,6 @@
 module.exports = {
   url: process.env.URL || 'https://itc.reddmo.com',
+  domain: 'itc.reddmo.com',
   siteName: ' stuff&things',
   siteDescription:
     'some stuff & things',
