@@ -43,7 +43,7 @@ const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-const filters = require('./config/filters')
+const filters = require('./config/filters/index.js')
 
 
 const markdownLib = require('./config/plugins/markdown.js');
