@@ -30,7 +30,7 @@ schema: blog
     </p>
 
     {{ content | safe }}
-<!-- <p>    
+ <p>    
 <div class="postsection">
     <div class="postsection__header">
        <h4 style="color: var(--color-date)">Webmentions</h4>
@@ -39,13 +39,13 @@ schema: blog
         </a>
     </div>
 
-    {%- set webmentionUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
+  {%- set webmentionUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
     {% include 'partials/webmentions.njk' %}
 </div>
-</p> -->
+</p>
 
-{%- set webmentionUrl -%}{{ page.url }}{%- endset -%}
-{% include 'partials/webmentions.njk' %}
+<!-- {%- set webmentionUrl -%}{{ page.url }}{%- endset -%}
+{% include 'partials/webmentions.njk' %} -->
 
   <h4 style="color: var(--color-date)">Other Posts</h4>
     {%- if collections.posts %}
