@@ -1,7 +1,7 @@
 ---
 title: 'Pastelodon Theme for Mona '
 description: "My Pastelodon Theme for the Mastodon app Mona"
-date: 2022-10-12
+date: 2023-03-02
 tags: ['pastelodon', 'mona', 'mastodon']
 image: './src/assets/images/blog/pastelodon.png'
 ---
