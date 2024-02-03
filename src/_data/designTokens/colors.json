@@ -29,6 +29,70 @@
     {
       "name": "Tertiary Highlight",
       "value": "#fbbe25"
-    }
+    },
+    {
+      "name": "Card Light",
+      "value": "#dadfe1"
+    },
+    {
+      "name": "Card Dark",
+      "value": "#050709"
+    },  
+    {
+      "name": "Card Link Light",
+      "value": "#e65722"
+    },
+    {
+      "name": "Card Link Dark",
+      "value": "#f2a127"
+    },  
+    {
+      "name": "Link Light",
+      "value": "#aa2e00"
+    }, 
+    {
+      "name": "Link Dark",
+      "value": "#f2a127"
+    },  
+    {
+      "name": "Card Border Light",
+      "value": "#ad9281"
+    }, 
+    {
+      "name": "Card Border Dark",
+      "value": "#ad9281"
+    },
+    {
+      "name": "Head Light",
+      "value": "#34515e"
+    },
+    {
+      "name": "Head Dark",
+      "value": "#ff6347"
+    },
+    {
+      "name": "Date Light",
+      "value": "#e65722"
+    },
+    {
+      "name": "Date Dark",
+      "value": "#00bfff"
+    },
+    {
+      "name": "Title Light",
+      "value": "#fcd031"
+    },
+    {
+      "name": "Title Dark",
+      "value": "#006bc5"
+    },
+    {
+      "name": "Shadow Light",
+      "value": "#252424"
+    },
+    {
+      "name": "Shadow Dark",
+      "value": "#dadfe1"
+    }        
   ]
 }

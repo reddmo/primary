@@ -12,4 +12,4 @@ I just hope to have a little fun, inject some insights of mine on different topi
 
 I live in PA with my wife, our two cats, and a bearded dragon. 
 
-One final note: Occasionally yuu'll see dumb art.
+One final note: Occasionally you'll see dumb art.

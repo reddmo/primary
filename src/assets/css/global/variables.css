@@ -33,8 +33,8 @@
 :root,
 :root[data-theme='light'] {
   color-scheme: light dark;
-  --bg-color: #f2f1ef;
-  --text-color: #050709;
+  --bg-color: var(--color-base-light);
+  --text-color: var(--color-light-text);
   --bg-color-glare: #ffffff;
   --color-primary: #1c9d68;
   --color-primary-glare: #f4d0df;
@@ -42,24 +42,22 @@
   --color-secondary-glare: #D8E2F4;
   --color-tertiary: #353b40;
   --color-quadrary: #e76e75;
-  --color-card: #dadfe1;
-  --color-card-text: #050709;
-  --color-card-border: #ad9281;
-  --color-card-link: #e65722;
-  --card-shadow: #252424;
-  --color-link: #aa2e00;
-  --color-head: #34515e; 
-  --color-date: #e65722;
-  --color-title: #fcd031; 
-/*  --text-color: var(--color-base-dark);
-  --bg-color: var(--color-base-light);
+  --color-card: var(--color-card-light);
+  --color-card-text: var(--color-light-text);
+  --color-card-border: var(--card-border-light);
+  --color-card-link: var(--color-card-link-light);
+  --card-shadow: var(--color-shadow-light);
+  --color-link: var(--color-link-light);
+  --color-head: var(--color-head-light); 
+  --color-date: var(--color-date-light);
+  --color-title: var(--color-title-light); 
   --color-base: var(--color-base-highlight);
   --color-primary: var(--color-primary-highlight);
   --color-secondary: var(--color-secondary-highlight);
-  --color-tertiary: var(--color-tertiary-highlight); */
+  --color-tertiary: var(--color-tertiary-highlight);
 
   /* modify base colors with color-mix - https://caniuse.com/?search=color-mix */
- --text-color-accent: color-mix(in oklab, var(--color-base-dark) 80%, var(--text-color));
+  --text-color-accent: color-mix(in oklab, var(--color-base-dark) 80%, var(--text-color));
   --bg-color-accent: color-mix(in oklab, var(--bg-color) 90%, var(--text-color));
   --bg-color-accent-2: color-mix(in oklab, var(--bg-color) 70%, var(--text-color)); 
 } 
@@ -67,8 +65,8 @@
 /* Dark Color Scheme (System Preference) */
 @media (prefers-color-scheme: dark) {
   :root {
-		--bg-color: #252424;
-		--text-color: #f2f1ef;
+		--bg-color: var(--color-base-dark);
+		--text-color: var(--color-dark-text);
 	    --bg-color-glare: #000000;
 	    --color-primary: #1c9d68;
 	    --color-primary-glare: #f4d0df;	  
@@ -76,20 +74,17 @@
 	    --color-secondary-glare: #d8e2f4;
 	    --color-tertiary: #f3f3f3;
 	    --color-quadrary: #e76e75;
-	    --color-card: #050709;
-	    --color-card-text: #f2f1ef;
-	    --color-card-border: #ad9281;
-	    --color-card-link: #f2a127;  
-	    --card-shadow: #e6e6e6;    
-        --color-link: #f2a127;
-	    --color-head: #ff6347; 
-	    --color-date: #00bfff;
-	    --color-title: #006bc5;   
+	    --color-card: var(--color-card-dark);
+	    --color-card-text: var(--color-dark-text);
+	    --color-card-border: var(--card-border-dark);
+	    --color-card-link: var(--color-card-link-dark);  
+	    --card-shadow: var(--color-shadow-dark);    
+        --color-link: var(--color-link-dark);
+	    --color-head: var(--color-head-dark); 
+	    --color-date: var(--color-date-dark);
+	    --color-title: var(--color-title-dark);   
 	    
 	    }
-/*	--text-color: var(--color-base-light);
-    --bg-color: var(--color-base-dark); */
-
     /* less "intensity" with color-mix */
  /*   --text-color-accent: color-mix(
       in oklab,
@@ -123,8 +118,8 @@
 
 /* Dark Color Scheme (Override) */
 :root[data-theme='dark'] {
-		--bg-color: #252424;
-		--text-color: #f2f1ef;
+		--bg-color: var(--color-base-dark);
+		--text-color: var(--color-dark-text);
 	    --bg-color-glare: #000000;
 	    --color-primary: #1c9d68;
 	    --color-primary-glare: #f4d0df;	  
@@ -132,15 +127,15 @@
 	    --color-secondary-glare: #d8e2f4;
 	    --color-tertiary: #f3f3f3;
 	    --color-quadrary: #e76e75;
-	    --color-card: #050709;
-	    --color-card-text: #f2f1ef;
-	    --color-card-border: #ad9281;
-	    --color-card-link: #f2a127;  
+	    --color-card: var(--color-card-dark);
+	    --color-card-text: var(--color-dark-text);
+	    --color-card-border: var(--card-border-dark);
+	    --color-card-link: var(--color-card-link-dark);  
 	    --card-shadow: #e6e6e6;    
-        --color-link: #f2a127;
-	    --color-head: #ff6347; 
-	    --color-date: #00bfff;
-	    --color-title: #006bc5;
+        --color-link: var(--color-link-dark);
+	    --color-head: var(--color-head-dark); 
+	    --color-date: var(--color-date-dark);
+	    --color-title: var(--color-title-dark); 
 
   /* less "intensity" with color-mix */
   --text-color-accent: color-mix(in oklab, var(--color-base-light) 70%, var(--bg-color));
