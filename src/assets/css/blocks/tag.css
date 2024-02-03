@@ -9,8 +9,8 @@
   --button-text: var(--bg-color);
   --button-border: var(--color-link);
   font-size: var(--size-step-min-2);
-  text-transform: lowercase;
-  padding: 0.1rem 0.625rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0.625rem;
   font-weight: 700;
 }
 
