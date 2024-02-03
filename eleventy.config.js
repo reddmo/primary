@@ -12,7 +12,7 @@
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
  */
-
+require('dotenv').config()
 // module import filters
 const {
   toISOString,
@@ -32,6 +32,7 @@ const {getAllPosts} = require('./config/collections/index.js');
 const {onlyMarkdown} = require('./config/collections/index.js');
 const {tagList} = require('./config/collections/index.js');
 
+const IS_PRODUCTION = process.env.ELEVENTY_ENV === 'production'
 // module import events
 const {svgToJpeg} = require('./config/events/index.js');
 
