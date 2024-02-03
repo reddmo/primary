@@ -28,14 +28,21 @@ schema: blog
       </a>
       {% endif %} {% endfor %} {% endif %}
     </p>
-<br>
 
     {{ content | safe }}
-    
-<h4 style="color: var(--color-date)">Webmentions</h4>
+<p>    
+<div class="postsection">
+    <div class="postsection__header">
+       <h4 style="color: var(--color-date)">Webmentions</h4>
+        <a href="https://indieweb.org/Webmention" class="postsection__info" target="_blank" rel="noopener noreferrer">
+             What are webmentions?
+        </a>
+    </div>
+
     {%- set webmentionUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
-    {% include "partials/webmentions.njk" %}
-<br>
+    {% include 'partials/webmentions.njk' %}
+</div>
+</p>
 
   <h4 style="color: var(--color-date)">Other Posts</h4>
     {%- if collections.posts %}
