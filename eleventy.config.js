@@ -98,7 +98,7 @@ module.exports = eleventyConfig => {
     }
 
     const filtered = webmentions
-        .filter(entry => entry['wm-target'] === `https://rknight.me${url}`)
+        .filter(entry => entry['wm-target'] === `https://itc.reddmo.com${url}`)
         .filter(entry => allowedTypes.includes(entry['wm-property']))
 
     filtered.forEach(m => {

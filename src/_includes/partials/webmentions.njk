@@ -8,7 +8,7 @@
 {% endif %}
 
 {% if mentions['repost-of']|length %}
-    <h4>Repost</h4>
+    <h4>Likes</h4>
     <div class="webmentions--likeboost">
         {%- for repost in mentions['repost-of'] %}
             <a target="_blank" rel="noopener" href="{{like.author.url}}"><img src="{{like.author.photo}}" title="{{like.author.name}}"></a>
@@ -17,8 +17,8 @@
 {% endif %}
 
 {% if mentions['in-reply-to']|length %}
-    <h4>Repost</h4>
-    <div class="webmentions--likeboost">
+    <h4>Likes</h4>
+    <div class="webmentions--repostboost">
         {%- for reply in mentions['in-reply-to'] %}
             <a target="_blank" rel="noopener" href="{{like.author.url}}"><img src="{{like.author.photo}}" title="{{like.author.name}}"></a>
         {% endfor%}
