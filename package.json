@@ -27,6 +27,7 @@
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@chrisburnell/eleventy-cache-webmentions": "^2.0.1",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {

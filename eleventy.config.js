@@ -59,6 +59,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
   eleventyConfig.addLayoutAlias('tags', 'tags.njk');
+  
+  
 
   // 	---------------------  Custom filters -----------------------
   eleventyConfig.addFilter('toIsoString', toISOString);
