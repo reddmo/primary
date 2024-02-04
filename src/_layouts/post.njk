@@ -38,6 +38,8 @@ schema: blog
     </p>
 
     {{ content | safe }}
+    
+    {% include "partials/webmentionslist.njk" %}
 
   <h4 style="color: var(--color-date)">Other Posts</h4>
     {%- if collections.posts %}
