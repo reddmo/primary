@@ -1,14 +1,14 @@
 {
   "title": "stuff&things",
-  "url": "https://itc.reddmo.com",
   "domain": "itc.reddmo.com",
+  "url": "https://itc.reddmo.com", 
   "description": "Writings on stuff and things.",
   "feed": {
     "subtitle": "Writings on stuff and things.",
     "filename": "feed.xml",
-    "path": "/dist/feed.xml",
-    "url": "https://itc.reddmo.com/dist/feed.xml",
-    "id": "https://itc.reddmo.com"
+    "path": "/feed/feed.xml",
+    "url": "https://itc.reddmo.com/feed.xml",
+    "id": "https://itc.reddmo.com/"
   },
   "author": {
     "name": "Jason Moser",

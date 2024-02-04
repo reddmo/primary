@@ -60,7 +60,7 @@ module.exports = {
     },
     credentials: {
       // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
-      domain: '',
+      domain: 'itc.reddmo.com',
       doctype: '',
       url: ''
     }
