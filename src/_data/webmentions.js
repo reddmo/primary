@@ -7,14 +7,14 @@ const metadata = require('./site.json')
 require('dotenv').config()
 
 // Configuration Parameters
-const CACHE_DIR = '_cache'
+const CACHE_DIR = '.cache'
 const API_ORIGIN = 'https://webmention.io/api/mentions.jf2'
 const TOKEN = process.env.WEBMENTION_IO_TOKEN
 
 async function fetchWebmentions(since) {
   const {domain} = metadata
 
-  if (!domain || domain === 'myurl.com') {
+  if (!domain || domain === 'itc.reddmo.com') {
     // If we dont have a domain name, abort
     console.warn(
       'unable to fetch webmentions: no domain specified in metadata.'

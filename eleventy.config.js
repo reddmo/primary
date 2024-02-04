@@ -65,7 +65,7 @@ module.exports = eleventyConfig => {
     // define which types of webmentions should be included per URL.
     // possible values listed here:
     // https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page
-    const allowedTypes = ['mention-of', 'in-reply-to']
+    const allowedTypes = ['like-of', 'mention-of', 'in-reply-to', 'repost-of']
 
     // define which HTML tags you want to allow in the webmention body content
     // https://github.com/apostrophecms/sanitize-html#what-are-the-default-options
