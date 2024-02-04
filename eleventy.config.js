@@ -76,7 +76,6 @@ module.exports = eleventyConfig => {
       }
     }
 
-
     // clean webmention content for output
     const clean = (entry) => {
       const { html, text } = entry.content
