@@ -21,8 +21,8 @@
 /* Change the border-color on :hover and :focus */
 .site-nav a:where(:hover, :focus) {
   --background-color: var(--menu-color);
-  --menu-color: var(--bg-color);
-  --border-color: var(--bg-color);
+  --menu-color: var(--text-color);
+  --border-color: var(--text-color-accent);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
@@ -55,7 +55,7 @@
 
   /* Change the border-color on :hover and :focus */
   .site-nav a:where(:hover, :focus) {
-    --text-decoration: var(--color-text-accent);
+    --text-decoration: var(--text-color-accent);
     --menu-color: var(--text-color);
     --background-color: transparent;
   }
