@@ -1,0 +1,43 @@
+{
+  "lastFetched": "2024-02-04T06:18:06.211Z",
+  "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Moser",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/dc2ef34548abe59ab69af853aa18c3499fdcbbcd613707f21cad1196d342553a.png",
+        "url": "https://mstdn.social/@jasonmoserPA"
+      },
+      "url": "https://hachyderm.io/@jasonmoser/111869542102355211#favorited-by-109747996385993997",
+      "published": null,
+      "wm-received": "2024-02-03T20:56:21Z",
+      "wm-id": 1776628,
+      "wm-source": "https://brid.gy/like/mastodon/@jasonmoser@hachyderm.io/111869542102355211/109747996385993997",
+      "wm-target": "https://itc.reddmo.com/blog/a-bit-about-etfs/",
+      "wm-protocol": "webmention",
+      "like-of": "https://itc.reddmo.com/blog/a-bit-about-etfs/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Moser :verified_paw:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/044689a11bf9b1bfc51e149886869d6fd7cedc67b4fa53c68db614f10e8f4ea0.jpg",
+        "url": "https://hachyderm.io/@jasonmoser"
+      },
+      "url": "https://hachyderm.io/@jasonmoser/111758248306870181#favorited-by-109582920709210825",
+      "published": null,
+      "wm-received": "2024-01-27T08:40:58Z",
+      "wm-id": 1773255,
+      "wm-source": "https://brid.gy/like/mastodon/@jasonmoser@hachyderm.io/111758248306870181/109582920709210825",
+      "wm-target": "https://itc.reddmo.com/blog/accessibility-on-the-site/",
+      "wm-protocol": "webmention",
+      "like-of": "https://itc.reddmo.com/blog/accessibility-on-the-site/",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ]
+}
