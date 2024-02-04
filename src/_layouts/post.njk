@@ -3,7 +3,15 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog" style="--region-space-top: var(--space-xl-2xl)">
+
+ <div class="section__inner">
+    <div class="wrapper flow region">
+    </div>
+    </div>
+ <!--   {% include 'svg/divider-edgy.svg' %} -->
+
+
+<article class="region blog" style="--region-space-top: var(--space-l-xl)">
   <div class="wrapper flow prose">
     <h1 style="color: var(--color-head)">{{ title }}</h1>
 
@@ -31,9 +39,6 @@ schema: blog
 
     {{ content | safe }}
 
-
-<!-- {%- set webmentionUrl -%}{{ page.url }}{%- endset -%}
-{% include 'partials/webmentions.njk' %} -->
 
   <h4 style="color: var(--color-date)">Other Posts</h4>
     {%- if collections.posts %}

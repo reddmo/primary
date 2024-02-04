@@ -12,7 +12,7 @@
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
  */
-require('dotenv').config()
+
 // module import filters
 const {
   toISOString,
@@ -32,7 +32,6 @@ const {getAllPosts} = require('./config/collections/index.js');
 const {onlyMarkdown} = require('./config/collections/index.js');
 const {tagList} = require('./config/collections/index.js');
 
-const IS_PRODUCTION = process.env.ELEVENTY_ENV === 'production'
 // module import events
 const {svgToJpeg} = require('./config/events/index.js');
 
@@ -43,9 +42,6 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-
-
-
 
 const markdownLib = require('./config/plugins/markdown.js');
 const {slugifyString} = require('./config/utils/index.js');
@@ -65,7 +61,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('tags', 'tags.njk');
 
   // 	---------------------  Custom filters -----------------------
-
   eleventyConfig.addFilter('toIsoString', toISOString);
   eleventyConfig.addFilter('formatDate', formatDate);
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
@@ -82,13 +77,12 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
-  
+
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('eleventyImage', imageShortcode);
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('include_raw', includeRaw);
-  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
-  eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
+  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, by stephanie eckles
 
   // 	--------------------- Custom transforms ---------------------
   eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
@@ -103,7 +97,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('tagList', tagList);
 
   // 	--------------------- Events ---------------------
-  eleventyConfig.on('eleventy.after', svgToJpeg);
+  if (process.env.ELEVENTY_RUN_MODE === 'serve') {
+    // this only runs in development, on your machine, so og images get installed fonts.
+    eleventyConfig.on('eleventy.after', svgToJpeg);
+  }
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
@@ -118,16 +115,14 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
-  ['src/assets/fonts/', 'src/assets/images/template'].forEach(path =>
-    eleventyConfig.addPassthroughCopy(path)
+  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(
+    path => eleventyConfig.addPassthroughCopy(path)
   );
 
   // to root
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/*': '/'
   });
-  
-  
 
   // 	--------------------- general config -----------------------
   return {
