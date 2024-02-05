@@ -89,19 +89,7 @@ module.exports = async function() {
   const { lastFetched } = cache
 
   // Only fetch new mentions in production
-  if (process.env.ELEVENTY_ENV === 'production' || !lastFetched) {
-    const feed = await fetchWebmentions(lastFetched)
-
-    if (feed) {
-      const webmentions = {
-        lastFetched: new Date().toISOString(),
-        children: mergeWebmentions(cache, feed)
-      }
-
-      writeToCache(webmentions)
-      return webmentions
-    }
-  }
+  
 
   console.log(`${cache.children.length} webmentions loaded from cache`)
   return cache
