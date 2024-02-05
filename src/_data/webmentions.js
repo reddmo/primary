@@ -1,7 +1,7 @@
 const fs = require('fs')
 const fetch = require('node-fetch')
 const unionBy = require('lodash/unionBy')
-const metadata = require('./site.json')
+const metadata = require('./meta.js')
 
 
 // Load .env variables with dotenv
