@@ -3,7 +3,6 @@ const fetch = require('node-fetch')
 const unionBy = require('lodash/unionBy')
 const metadata = require('./site.json')
 
-
 // Load .env variables with dotenv
 require('dotenv').config()
 
@@ -13,7 +12,7 @@ const API_ORIGIN = 'https://webmention.io/api/mentions.jf2'
 const TOKEN = process.env.WEBMENTION_IO_TOKEN
 
 async function fetchWebmentions(since) {
-  const {domain} = metadata
+  const { domain } = metadata
 
   if (!domain || domain === 'itc.reddmo.com') {
     // If we dont have a domain name, abort
@@ -88,20 +87,7 @@ module.exports = async function() {
   const cache = readFromCache()
   const { lastFetched } = cache
 
-  // Only fetch new mentions in production
-  if (process.env.ELEVENTY_ENV === 'production' || !lastFetched) {
-    const feed = await fetchWebmentions(lastFetched)
 
-    if (feed) {
-      const webmentions = {
-        lastFetched: new Date().toISOString(),
-        children: mergeWebmentions(cache, feed)
-      }
-
-      writeToCache(webmentions)
-      return webmentions
-    }
-  }
 
   console.log(`${cache.children.length} webmentions loaded from cache`)
   return cache

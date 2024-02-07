@@ -1,10 +1,4 @@
 {
-  "title": "stuff&things",
   "domain": "itc.reddmo.com",
-  "url": "https://itc.reddmo.com", 
-  "description": "Writings on stuff and things.",
-  "author": {
-    "name": "Jason Moser",
-    "email": "jason@reddmo.com"
-  }
+  "url": "https://itc.reddmo.com"
 }

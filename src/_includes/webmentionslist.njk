@@ -16,7 +16,7 @@
     <ol class="webmentions__list">
       {% for webmention in mentions | reverse %}
         <li class="webmentions__item">
-          {% include "partials/webmention.njk" %}
+          {% include "webmention.njk" %}
         </li>
       {% endfor %}
     </ol>
