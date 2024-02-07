@@ -14,7 +14,7 @@ const TOKEN = process.env.WEBMENTION_IO_TOKEN
 async function fetchWebmentions(since) {
   const { domain } = metadata
 
-  if (!domain || domain === 'itc.reddmo.com') {
+  if (!domain || domain === 'reddmo.com') {
     // If we dont have a domain name, abort
     console.warn(
       'unable to fetch webmentions: no domain specified in metadata.'
@@ -87,7 +87,20 @@ module.exports = async function() {
   const cache = readFromCache()
   const { lastFetched } = cache
 
+  // Only fetch new mentions in production
+  if (process.env.ELEVENTY_ENV === 'production' || !lastFetched) {
+    const feed = await fetchWebmentions(lastFetched)
 
+    if (feed) {
+      const webmentions = {
+        lastFetched: new Date().toISOString(),
+        children: mergeWebmentions(cache, feed)
+      }
+
+      writeToCache(webmentions)
+      return webmentions
+    }
+  }
 
   console.log(`${cache.children.length} webmentions loaded from cache`)
   return cache

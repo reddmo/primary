@@ -14,9 +14,9 @@
       "wm-received": "2024-02-03T20:56:21Z",
       "wm-id": 1776628,
       "wm-source": "https://brid.gy/like/mastodon/@jasonmoser@hachyderm.io/111869542102355211/109747996385993997",
-      "wm-target": "https://itc.reddmo.com/blog/a-bit-about-etfs/",
+      "wm-target": "https://reddmo.com/blog/a-bit-about-etfs/",
       "wm-protocol": "webmention",
-      "like-of": "https://itc.reddmo.com/blog/a-bit-about-etfs/",
+      "like-of": "https://reddmo.com/blog/a-bit-about-etfs/",
       "wm-property": "like-of",
       "wm-private": false
     },
@@ -33,9 +33,9 @@
       "wm-received": "2024-01-27T08:40:58Z",
       "wm-id": 1773255,
       "wm-source": "https://brid.gy/like/mastodon/@jasonmoser@hachyderm.io/111758248306870181/109582920709210825",
-      "wm-target": "https://itc.reddmo.com/blog/accessibility-on-the-site/",
+      "wm-target": "https://reddmo.com/blog/accessibility-on-the-site/",
       "wm-protocol": "webmention",
-      "like-of": "https://itc.reddmo.com/blog/accessibility-on-the-site/",
+      "like-of": "https://reddmo.com/blog/accessibility-on-the-site/",
       "wm-property": "like-of",
       "wm-private": false
     }

@@ -1,6 +1,6 @@
 module.exports = {
-  url: process.env.URL || 'https://itc.reddmo.com',
-  domain: 'itc.reddmo.com',
+  url: process.env.URL || 'https://reddmo.com',
+  domain: 'reddmo.com',
   siteName: ' stuff&things',
   siteDescription:
     'some stuff & things',
@@ -14,7 +14,7 @@ module.exports = {
   authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
   creator: 'Jason Moser', // i.e. Lene Saile - creator's (developer) name.
   creatorEmail: 'admin@reddmo.com', // i.e. hola@lenesaile.com
-  creatorWebsite: 'https://itc.reddmo.com', // i.e. https.://www.lenesaile.com
+  creatorWebsite: 'https://reddmo.com', // i.e. https.://www.lenesaile.com
   creatorSocial: 'https://hachyderm.com/@jasonmoser', // i.e. https.://www.lenesaile.com
   themeColor: '--text-color', //  Manifest: defines the default theme color for the application
   themeBgColor: '--background-color', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
@@ -60,7 +60,7 @@ module.exports = {
     },
     credentials: {
       // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
-      domain: 'itc.reddmo.com',
+      domain: 'reddmo.com',
       doctype: '',
       url: ''
     }
