@@ -10,7 +10,7 @@ Initially it started as implementing dark mode. This is based on the user's sett
 
 After that was resolved, I started messing with the color scheme and realized after a few iterations that while I liked the colors, they may not have been the most accessible. I have no illusions about the number of viewers the site has but that's irrelevant. If I have one viewer and they need accommodations, I want to meet that.
 
-To that end, I have used contrasting colors along with Palatino and Verdana fonts to hopefully make the site easier to read. I'm always looking to improve so, please, if you read this and feel it is not accessible, shoot me an [email](mailto:jason@reddmo.com).
+To that end, I have used contrasting colors along with Palatino and Verdana fonts to hopefully make the site easier to read. I'm always looking to improve so, please, if you read this and feel it is not accessible, shoot me an [email](mailto:admin@reddmo.com).
 
 A few sites that helped along the way:
 
