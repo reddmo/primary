@@ -13,3 +13,9 @@
   padding-block-end: var(--region-space-bottom, var(--space-xs-s));
 }
 
+.region3 {
+  padding-block-start: var(--region-space-top, var(--space-m-l));
+  padding-block-end: var(--region-space-bottom, var(--space-m-l));
+}
+
+
