@@ -19,6 +19,7 @@
     "type": "git",
     "url": "https://github.com/madrilene/eleventy-excellent.git"
   },
+
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-fetch": "^4.0.0",
