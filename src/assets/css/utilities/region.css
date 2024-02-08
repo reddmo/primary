@@ -9,8 +9,8 @@
 }
 
 .region2 {
-  padding-block-start: var(--region-space-top, var(--space-xs-s));
-  padding-block-end: var(--region-space-bottom, var(--space-xs-s));
+  padding-block-start: var(--region-space-top, var(--space-xs));
+  padding-block-end: var(--region-space-bottom, var(--space-xs));
 }
 
 .region3 {
