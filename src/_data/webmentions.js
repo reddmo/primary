@@ -1,5 +1,5 @@
 const fs = require('fs')
-const fetch = require('node-fetch')
+const fetch = require('@11ty/eleventy-fetch')
 const unionBy = require('lodash/unionBy')
 const metadata = require('./site.json')
 

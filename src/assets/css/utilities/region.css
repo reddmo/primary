@@ -7,3 +7,9 @@
   padding-block-start: var(--region-space-top, var(--space-l-xl));
   padding-block-end: var(--region-space-bottom, var(--space-l-xl));
 }
+
+.region2 {
+  padding-block-start: var(--region-space-top, var(--space-xs-s));
+  padding-block-end: var(--region-space-bottom, var(--space-xs-s));
+}
+
