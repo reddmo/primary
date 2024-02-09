@@ -8,7 +8,7 @@ module.exports = {
   lang: 'en',
   skipContent: 'Skip to content',
   author: 'Jason Moser', // i.e. Lene Saile - page / blog author's name. Must be set.
-  authorAvatar: '/favicon.png', // for h-card, defaults to favicon
+  authorAvatar: '/assets/images/template/stuffandthings.png', // for h-card, defaults to favicon
   authorEmail: '', // i.e. hola@lenesaile.com - email of the author
   authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
   creator: 'Jason Moser', // i.e. Lene Saile - creator's (developer) name.
