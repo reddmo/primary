@@ -1,7 +1,7 @@
 ---
 title: Webmentions and 11ty
 description: Getting webmentions up and running on 11ty
-date: 2024-02-09
+date: 2024-02-08
 tags: ['11ty', 'eleventy', 'webmentions']
 ---
 I have been struggling getting webmentions working on the site. It's worth noting that I don't have many yet, but I like to think I'm preparing for the future.
