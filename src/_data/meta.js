@@ -14,7 +14,7 @@ module.exports = {
   creator: 'Jason Moser', // i.e. Lene Saile - creator's (developer) name.
   creatorEmail: 'admin@reddmo.com', // i.e. hola@lenesaile.com
   creatorWebsite: 'https://stuff.reddmo.com', // i.e. https.://www.lenesaile.com
-  creatorSocial: 'https://hachyderm.com/@jasonmoser', // i.e. https.://www.lenesaile.com
+  creatorSocial: 'https://hachyderm.io/@jasonmoser', // i.e. https.://www.lenesaile.com
   themeColor: '--text-color', //  Manifest: defines the default theme color for the application
   themeBgColor: '--background-color', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
