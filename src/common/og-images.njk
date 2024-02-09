@@ -1,12 +1,12 @@
 ---
 font: "'Verdana', Ubuntu" # TODO: find a way for the hosting provider to provide the font on build
-background: '--bg-color'
-text: '--text-color)'
+background: '#f2f1ef'
+text: '#252424'
 waveSteps: 5
 amplitude: 35
 waveHeight: 0.50
 siteUrl: 'stuff.reddmo.com'
-colors: ['--color-head', '--color-date', '--color-link']
+colors: ['#aa2e00', '#34515e', '#e65722']
 pagination:
   data: collections.posts
   size: 1
@@ -70,7 +70,7 @@ eleventyExcludeFromCollections: true
 			<rect width="800%" height="800%" transform="translate(0,0)" fill="url(#a)"/>
 		</svg>
 
-		<rect id="bg" width="100%" height="100%" opacity="0.7" fill="{{ background }}"/>
+		<rect id="bg" width="100%" height="100%" fill="{{ background }}"/>
 		<rect id="name-bg" width="100%" height="42px" fill="{{ background }}" stroke="{{ text }}" stroke-width="0.1" transform="translate(150,550)" />
 
 		<!-- date -->
