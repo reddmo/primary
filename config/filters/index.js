@@ -24,9 +24,64 @@ const toAbsoluteUrl = url => {
 /** Converts the given date string to ISO8610 format. */
 const toISOString = dateString => dayjs(dateString).toISOString();
 
-const sanitizeHTML = require('sanitize-html')
+
+const sanitizeHTML = require("sanitize-html");
+const webmentionsByUrl = (webmentions, url) => {
+  const allowedTypes = {
+    likes: ["like-of"],
+    reposts: ["repost-of"],
+    comments: ["mention-of", "in-reply-to"],
+  };
+
+  const sanitize = (entry) => {
+    if (entry.content && entry.content.html) {
+      entry.content = sanitizeHTML(entry.content.html, {
+        allowedTags: ["b", "i", "em", "strong", "a"],
+      });
+    }
+    return entry;
+  };
+
+  const pageWebmentions = webmentions
+    .filter(
+      (mention) => mention["wm-target"] === "https://stuff.reddmo.com" + url
+    )
+    .sort((a, b) => new Date(b.published) - new Date(a.published))
+    .map(sanitize);
+  // console.log("pageWebmentions: ", pageWebmentions);
+
+  const likes = pageWebmentions
+    .filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
+    .filter((like) => like.author)
+    .map((like) => like.author);
+  // console.log(JSON.stringify(likes, null, 2));
+
+  const reposts = pageWebmentions
+    .filter((mention) => allowedTypes.reposts.includes(mention["wm-property"]))
+    .filter((repost) => repost.author)
+    .map((repost) => repost.author);
+
+  const comments = pageWebmentions
+    .filter((mention) => allowedTypes.comments.includes(mention["wm-property"]))
+    .filter((comment) => {
+      const { author, published, content } = comment;
+      return author && author.name && published && content;
+    });
+  // console.log(JSON.stringify(comments, null, 2));
+
+  const mentionCount = likes.length + reposts.length + comments.length;
+  const data = { likes, reposts, comments, mentionCount };
+  return data;
+};
 
 
+// create a plain date from an ISO date (for webmentions)
+const plainDate = (isoDate) => {
+  let date = new Date(isoDate);
+  let options = { year: "numeric", month: "long", day: "numeric" };
+  let formattedDate = date.toLocaleDateString("en-US", options);
+  return formattedDate;
+};
 
 /** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format */
 const formatDate = (date, format) => dayjs(date).format(format);
@@ -86,5 +141,6 @@ module.exports = {
   stripHtml,
   minifyCss,
   minifyJs,
-  splitlines
+  splitlines,
+  webmentionsByUrl
   };

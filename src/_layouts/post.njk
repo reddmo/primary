@@ -36,7 +36,9 @@ schema: blog
 
     {{ content | safe }}
     
-<!--   {% include "webmentionslist.njk" %}  -->
+
+  {% include 'partials/webmentions.njk' %}
+
 
   <h4 style="color: var(--color-date)">Other Posts</h4>
     {%- if collections.posts %}
