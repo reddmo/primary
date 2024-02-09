@@ -22,7 +22,8 @@ const {
   minifyCss,
   minifyJs,
   splitlines,
-  webmentionsByUrl
+  webmentionsByUrl,
+  plainDate
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -74,6 +75,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('slugify', slugifyString);
   eleventyConfig.addFilter('splitlines', splitlines);
   eleventyConfig.addFilter("webmentionsByUrl", webmentionsByUrl);
+  eleventyConfig.addFilter("plainDate", plainDate);
 
   eleventyConfig.addFilter('cssmin', minifyCss);
   eleventyConfig.addNunjucksAsyncFilter('jsmin', minifyJs);

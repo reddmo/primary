@@ -142,5 +142,6 @@ module.exports = {
   minifyCss,
   minifyJs,
   splitlines,
-  webmentionsByUrl
+  webmentionsByUrl,
+  plainDate
   };
