@@ -1,12 +1,8 @@
 ---
-font: "'Verdana', Ubuntu" # TODO: find a way for the hosting provider to provide the font on build
-background: '#f2f1ef'
-text: '#252424'
-waveSteps: 5
-amplitude: 35
-waveHeight: 0.50
+font: "'Red Hat Display', Ubuntu" # These get created in development, you must have the font installed on your system.
+background: '#252424'
+text: '#F2F1EF'
 siteUrl: 'stuff.reddmo.com'
-colors: ['#aa2e00', '#34515e', '#e65722']
 pagination:
   data: collections.posts
   size: 1
@@ -22,7 +18,7 @@ eleventyExcludeFromCollections: true
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
-		{% set titleInLines = post.data.title | splitlines(20) %}
+		{% set titleInLines = post.data.title | splitlines(22) %}
 		{% set numberOfLines = titleInLines.length %}
 		{% if numberOfLines == 1 %}
 		{% set verticalStartingPoint = 340 %}
@@ -36,48 +32,26 @@ eleventyExcludeFromCollections: true
 		{% set verticalStartingPoint = 170 %}
 		{% endif %}
 
+
 		<!-- SVG background, generate your own on: https://app.haikei.app/ or  https://pattern.monster/ -->
-		<svg id="patternId" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-			<defs>
-					<pattern id="a" patternUnits="userSpaceOnUse" width="40" height="80" patternTransform="scale(2) rotate(0)">
-							<rect x="0" y="0" width="100%" height="100%" fill="{{ background }}" />
-							<path
-									d="M-4.798 13.573C-3.149 12.533-1.446 11.306 0 10c2.812-2.758 6.18-4.974 10-5 4.183.336 7.193 2.456 10 5 2.86 2.687 6.216 4.952 10 5 4.185-.315 7.35-2.48 10-5 1.452-1.386 3.107-3.085 4.793-4.176"
-									stroke-width="2"
-									stroke="{{ colors[0] }}"
-									fill="none"
-							/>
-							<path
-									d="M-4.798 33.573C-3.149 32.533-1.446 31.306 0 30c2.812-2.758 6.18-4.974 10-5 4.183.336 7.193 2.456 10 5 2.86 2.687 6.216 4.952 10 5 4.185-.315 7.35-2.48 10-5 1.452-1.386 3.107-3.085 4.793-4.176"
-									stroke-width="2"
-									stroke="{{ colors[1] }}"
-									fill="none"
-							/>
-							<path
-									d="M-4.798 53.573C-3.149 52.533-1.446 51.306 0 50c2.812-2.758 6.18-4.974 10-5 4.183.336 7.193 2.456 10 5 2.86 2.687 6.216 4.952 10 5 4.185-.315 7.35-2.48 10-5 1.452-1.386 3.107-3.085 4.793-4.176"
-									stroke-width="2"
-									stroke="{{ colors[2] }}"
-									fill="none"
-							/>
-							<path
-									d="M-4.798 73.573C-3.149 72.533-1.446 71.306 0 70c2.812-2.758 6.18-4.974 10-5 4.183.336 7.193 2.456 10 5 2.86 2.687 6.216 4.952 10 5 4.185-.315 7.35-2.48 10-5 1.452-1.386 3.107-3.085 4.793-4.176"
-									stroke-width="2"
-									stroke="{{ colors[3] }}"
-									fill="none"
-							/>
-					</pattern>
-			</defs>
-			<rect width="800%" height="800%" transform="translate(0,0)" fill="url(#a)"/>
+		<svg id="visual" viewBox="0 0 1200 630" width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 369L21.5 369C43 369 86 369 128.8 369C171.7 369 214.3 369 257.2 369C300 369 343 369 385.8 369C428.7 369 471.3 369 514.2 369C557 369 600 369 642.8 369C685.7 369 728.3 369 771.2 369C814 369 857 369 878.5 369L900 369L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#ff6347" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+<path d="M0 414L21.5 414C43 414 86 414 128.8 414C171.7 414 214.3 414 257.2 414C300 414 343 414 385.8 414C428.7 414 471.3 414 514.2 414C557 414 600 414 642.8 414C685.7 414 728.3 414 771.2 414C814 414 857 414 878.5 414L900 414L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#c23f6d" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+<path d="M0 459L21.5 459C43 459 86 459 128.8 459C171.7 459 214.3 459 257.2 459C300 459 343 459 385.8 459C428.7 459 471.3 459 514.2 459C557 459 600 459 642.8 459C685.7 459 728.3 459 771.2 459C814 459 857 459 878.5 459L900 459L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#6c386c" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+<path d="M0 504L21.5 504C43 504 86 504 128.8 504C171.7 504 214.3 504 257.2 504C300 504 343 504 385.8 504C428.7 504 471.3 504 514.2 504C557 504 600 504 642.8 504C685.7 504 728.3 504 771.2 504C814 504 857 504 878.5 504L900 504L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#242843" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+<path d="M0 549L21.5 549C43 549 86 549 128.8 549C171.7 549 214.3 549 257.2 549C300 549 343 549 385.8 549C428.7 549 471.3 549 514.2 549C557 549 600 549 642.8 549C685.7 549 728.3 549 771.2 549C814 549 857 549 878.5 549L900 549L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="#050709" style="transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);"></path>
 		</svg>
 
-		<rect id="bg" width="100%" height="100%" fill="{{ background }}"/>
-		<rect id="name-bg" width="100%" height="42px" fill="{{ background }}" stroke="{{ text }}" stroke-width="0.1" transform="translate(150,550)" />
+		<!-- if you need to darken or lighten your bg -->
+		
+		<rect id="bg" width="100%" height="100%" opacity="0.1" fill="{{ background }}"/>
+		<rect id="name-bg" width="100%" height="42px" fill="{{ background }}" transform="translate(150,550)" />
 
 		<!-- date -->
 		<text
 			font-family="{{ font }}, sans-serif"
 			font-size="24"
-			font-weight="700"
+			font-weight="900"
 			fill="{{ text }}"
 			letter-spacing="-1"
 		>
@@ -91,7 +65,7 @@ eleventyExcludeFromCollections: true
 			id="text"
 			font-family="{{ font }}, sans-serif"
 			font-size="80"
-			font-weight="700"
+			font-weight="900"
 			fill="{{ text }}"
 			letter-spacing="-3"
 		>
@@ -102,14 +76,15 @@ eleventyExcludeFromCollections: true
 			{% endfor %}
 		</text>
 
-		<!-- sitename -->
+		<!-- sitename / url -->
 		<text
 		font-family="{{ font }}, sans-serif"
 			font-size="24"
-			font-weight="bold"
+			font-weight="500"
 			fill="{{ text }}"
 			letter-spacing="-0.5"
 		>
-			<tspan x="160" y="580">{{ meta.siteName }} · {{ meta.url | replace("https://", "") | replace("http://", "") }}</tspan>
+			<!-- <tspan x="160" y="580">{{ meta.siteName }} · {{ meta.url | replace("https://", "") | replace("http://", "") }}</tspan> -->
+			<tspan x="160" y="580">{{ meta.siteName }} — {{ siteUrl }}</tspan>
 		</text>
 </svg>
