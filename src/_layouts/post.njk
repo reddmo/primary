@@ -36,9 +36,10 @@ schema: blog
 
     {{ content | safe }}
     
-
+{% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
+{% if  mentions.mentionCount > 0 %}
   {% include 'partials/webmentions.njk' %}
-
+{% endif %}
 
   <h4 style="color: var(--color-date)">Other Posts</h4>
     {%- if collections.posts %}
