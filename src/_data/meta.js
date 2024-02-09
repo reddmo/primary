@@ -1,6 +1,5 @@
 module.exports = {
-  url: process.env.URL || 'https://stuff.reddmo.com',
-  domain: 'stuff.reddmo.com',
+  url: process.env.URL || 'http://localhost:8080',
   siteName: ' stuff&things',
   siteDescription:
     'some stuff & things',
@@ -60,7 +59,7 @@ module.exports = {
     },
     credentials: {
       // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
-      domain: 'stuff.reddmo.com',
+      domain: '',
       doctype: '',
       url: ''
     }
