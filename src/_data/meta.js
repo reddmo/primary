@@ -18,7 +18,7 @@ module.exports = {
   themeColor: '--text-color', //  Manifest: defines the default theme color for the application
   themeBgColor: '--background-color', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
-    opengraph_default: '/assets/images/template/stuffandthings.PNG', // fallback/default meta image
+    opengraph_default: '/assets/images/template/stuffandthings.png', // fallback/default meta image
     opengraph_default_alt:
       'An image with the words Stuff & Things and tool icons' // alt text for default meta image
   },
