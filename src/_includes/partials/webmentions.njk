@@ -23,7 +23,7 @@
     {% endif %}
 
     {% if mentions.likes | length !==0 %}
-    <h4 style="color: var(--color-date)">Likes ({{ mentions.likes | length }})</h3>
+    <h4 style="color: var(--color-date)">Likes ({{ mentions.likes | length }})</h4>
     <div class="likes">
       {% for item in mentions.likes %}
         <a href="{{ item.url }}"><img src="{{ item.photo }}" loading="lazy" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>

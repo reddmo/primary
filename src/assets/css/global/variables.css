@@ -10,11 +10,11 @@
   --tracking-s: -0.075ch;
   --tracking-wide: 0.05ch;
 
-/*  --gradient-rainbow: linear-gradient(
+  --gradient-rainbow: linear-gradient(
     90deg,
-    var(--color-primary),
-    var(--color-secondary),
-    var(--color-tertiary)
+    var(--color-head),
+    var(--color-date),
+    var(--color-link)
   );
   --gradient-conic: conic-gradient(
     var(--color-primary) 0 28%,
@@ -27,7 +27,7 @@
     var(--color-primary) 0 85%,
     var(--color-secondary) 0 92%,
     var(--color-tertiary) 0 100%
-  ); */
+  ); 
 }
 
 :root,
