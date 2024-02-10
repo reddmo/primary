@@ -2,7 +2,7 @@
 .site-nav ul {
   list-style: none;
   margin: 0;
-  gap: var(--space-xs);
+  gap: var(--space-s);
   line-height: 0.5em;
   padding-block-end: var(--space-s);
 }
