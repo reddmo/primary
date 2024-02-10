@@ -47,6 +47,14 @@
       "value": "#f89406"
     },  
     {
+      "name": "Card Date Light",
+      "value": "#00008b"
+    }, 
+    {
+      "name": "Card Date Dark",
+      "value": "#ff6347"
+    }, 
+    {
       "name": "Link Light",
       "value": "#b50000"
     }, 

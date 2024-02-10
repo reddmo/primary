@@ -54,6 +54,7 @@
   --color-link: var(--color-link-light);
   --color-head: var(--color-head-light); 
   --color-date: var(--color-date-light);
+  --card-date: var(--color-card-date-light);
   --color-title: var(--color-title-light); 
   --color-base: var(--color-base-highlight);
   --color-primary: var(--color-primary-highlight);
@@ -90,6 +91,7 @@
         --color-link: var(--color-link-dark);
 	    --color-head: var(--color-head-dark); 
 	    --color-date: var(--color-date-dark);
+	    --card-date: var(--color-card-date-dark);
 	    --color-title: var(--color-title-dark);   
 	    
 	    }
@@ -147,6 +149,7 @@
         --color-link: var(--color-link-dark);
 	    --color-head: var(--color-head-dark); 
 	    --color-date: var(--color-date-dark);
+	    --card-date: var(--color-card-date-dark);
 	    --color-title: var(--color-title-dark); 
 
   /* less "intensity" with color-mix */
