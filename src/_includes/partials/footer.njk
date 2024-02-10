@@ -21,7 +21,6 @@
         {% endfor %}
       </nav>
 
-
 				<nav class="site-foot__inner" aria-label="{{ meta.navigation.ariaSocial }}">
 
 
@@ -38,16 +37,32 @@
 							<a href="{{ value }}" rel="me">
 								<span class="visually-hidden">{{ key | capitalize }}</span>
 								<div aria-hidden="true">{% include 'svg/social-' + key + '.svg' %}</div>
-							</a> 
+							</a>
 							{% endif %}
 
 
 					{% endfor %}
         </nav>
-        
     </div>
-    {% include 'components/theme-switch.njk' %}
 
+<!--		<div
+		role="region"
+		class="theme-switch | cluster mt-xs"
+		style="--cluster-horizontal-alignment: center; --gutter: 0.5rem;"
+		aria-labelledby="theme-switcher-label theme-switcher-value"
+		data-theme-switcher
+		hidden
+	>
+
+		<h4 id="theme-switcher-label">{{ meta.themeSwitch.title }}</h4>
+			<button
+				class="button2"
+				theme-toggle
+			>
+				<span id="theme-switcher-value"></span>
+			</button>
+
+		</div> -->
 	<!--	<div class="text-center mt-m-l">
 			<a class="creator text-step-min-1" href="{{ meta.creatorWebsite }}"
 			>Made with   <span>{% include 'svg/flame.svg' %}</span>
@@ -55,4 +70,5 @@
 		>
 		</div> -->
   </div>
+
 </footer>
