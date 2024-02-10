@@ -6,10 +6,9 @@
     {% set activePage = page.url | url %}
 
     {% include "partials/menu.njk" %}
-    			<a href="/" class="logo | cluster" {% if activePage === '/' %} aria-current="page" {% endif %}>
-		<!--	{% include "svg/chevrons-left.svg" %} -->
-			<span style="color: var(--color-head)">{{ meta.siteName }}</span>
-		<!--	{% include "svg/chevrons-right.svg" %} -->
+    <a href="/" class="logo | cluster" {% if activePage === '/' %} aria-current="page" {% endif %}>
+	
+			<h3 style="-webkit-text-stroke: 2px var(--text-color); color: transparent">{{ meta.siteName }}</h3>
 			</a>
   </div>
 </header>
