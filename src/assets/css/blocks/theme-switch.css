@@ -1,6 +1,6 @@
 .theme-switch h2 {
-  font-size: var(--size-step-min-2);
-  text-transform: uppercase;
+  font-size: var(--size-step-min-1);
+  font-family: var(--font-base);
 }
 
 .theme-switch .button {
@@ -13,19 +13,8 @@
   font-weight: 700;
 }
 
-.theme-switch .button:hover,
-.theme-switch .button[aria-current='page'],
 .theme-switch .button[aria-pressed='true'] {
-  background-size: 150% 150%;
   --button-bg: var(--bg-color);
-  --button-text: var(--text-color);
+  --button-text: var(--color-link);
   --button-border: var(--color-link);
-}
-
-.theme-switch .button2 {
-  --button-border: var(--color-date);
-/*  border-radius: 50%; */
-  font-size: var(--size-step-0);
-  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
-  font-weight: 600;
-}
+  }
