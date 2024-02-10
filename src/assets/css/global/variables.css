@@ -131,7 +131,7 @@
 		--bg-color: var(--color-base-dark);
 		--text-color: var(--color-dark-text);
 		--title: var(--color-title-all);
-  		--shadow: var(--color-title-shadow);
+  		--shadow: var(--color-title-shadow-dark);
   		--box-shadow: var(--color-box-shadow);
   		--card-box-shadow: var(--color-card-box-shadow);
 	    --bg-color-glare: #000000;

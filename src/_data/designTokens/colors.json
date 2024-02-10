@@ -108,7 +108,11 @@
     },
     {
       "name": "Title Shadow",
-      "value": "#252424"
+      "value": "#f2f1ef"
+    },
+    {
+      "name": "Title Shadow Dark",
+      "value": "#ff6347"
     },
     {
       "name": "Box Shadow",
