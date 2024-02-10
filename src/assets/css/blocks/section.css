@@ -3,7 +3,7 @@
 }
 
 .section__inner {
-  background-image: linear-gradient(
+ /* background-image: linear-gradient(
   var(--color-head) 0 8%, 
   var(--bg-color) 8% 10%, 
   var(--color-date) 10% 20%, 
@@ -12,8 +12,12 @@
   var(--bg-color) 79% 80%, 
   var(--color-date) 80% 90%, 
   var(--bg-color) 90% 92%, 
-  var(--color-head) 92% 100%);
-  color: #ffffff;
+  var(--color-head) 92% 100%); */
+  background-image: linear-gradient(
+  var(--color-head) 0 10%,
+  var(--color-link) 11% 89%,
+  var(--color-head) 90% 100%);
+ /* color: #ffffff; */
 }
 
 .section__inners {
