@@ -48,7 +48,7 @@
     },  
     {
       "name": "Link Light",
-      "value": "#aa2e00"
+      "value": "#b50000"
     }, 
     {
       "name": "Link Dark",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Head Light",
-      "value": "#007a7c"
+      "value": "#1460aa"
     },
     {
       "name": "Head Dark",
@@ -72,7 +72,7 @@
     },
     {
       "name": "Date Light",
-      "value": "#e65722"
+      "value": "#800080"
     },
     {
       "name": "Date Dark",
