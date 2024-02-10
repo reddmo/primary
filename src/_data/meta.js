@@ -15,8 +15,8 @@ module.exports = {
   creatorEmail: 'admin@reddmo.com', // i.e. hola@lenesaile.com
   creatorWebsite: 'https://stuff.reddmo.com', // i.e. https.://www.lenesaile.com
   creatorSocial: 'https://hachyderm.io/@jasonmoser', // i.e. https.://www.lenesaile.com
-  themeColor: '--text-color', //  Manifest: defines the default theme color for the application
-  themeBgColor: '--background-color', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
+  themeColor: 'var(--text-color)', //  Manifest: defines the default theme color for the application
+  themeBgColor: 'var(--bg-color)', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
     opengraph_default: '/assets/images/template/stuffandthings.jpg', // fallback/default meta image
     opengraph_default_alt:
