@@ -52,7 +52,7 @@
     }, 
     {
       "name": "Link Dark",
-      "value": "#f2a127"
+      "value": "#fc9903"
     },  
     {
       "name": "Card Border Light",
@@ -93,6 +93,23 @@
     {
       "name": "Shadow Dark",
       "value": "#dadfe1"
-    }        
+    },
+    {
+      "name": "Title All",
+      "value": "#f2f1ef"
+    },
+    {
+      "name": "Title Shadow",
+      "value": "#252424"
+    },
+    {
+      "name": "Box Shadow",
+      "value": "#050709"
+    },
+    {
+      "name": "Card Box Shadow",
+      "value": "#252424"
+    }
+      
   ]
 }

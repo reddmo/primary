@@ -6,7 +6,7 @@
   padding: var(--space-m-l);
   border-radius: var(--border-radius);
   max-inline-size: unset;
-  /* box-shadow: 2px 2px 1px var(--card-shadow); */
+  /* box-shadow: 5px 5px var(--color-head); */
 }
 
 .card ::selection {

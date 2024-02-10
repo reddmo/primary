@@ -35,6 +35,10 @@
   color-scheme: light dark;
   --bg-color: var(--color-base-light);
   --text-color: var(--color-light-text);
+  --title: var(--color-title-all);
+  --shadow: var(--color-title-shadow);
+  --box-shadow: var(--color-box-shadow);
+  --card-box-shadow: var(--color-card-box-shadow);
   --bg-color-glare: #ffffff;
   --color-primary: #1c9d68;
   --color-primary-glare: #f4d0df;
@@ -67,6 +71,10 @@
   :root {
 		--bg-color: var(--color-base-dark);
 		--text-color: var(--color-dark-text);
+		--title: var(--color-title-all);
+        --shadow: var(--color-title-shadow);
+ 		--box-shadow: var(--color-box-shadow);
+ 		--card-box-shadow: var(--color-card-box-shadow);
 	    --bg-color-glare: #000000;
 	    --color-primary: #1c9d68;
 	    --color-primary-glare: #f4d0df;	  
@@ -120,6 +128,10 @@
 :root[data-theme='dark'] {
 		--bg-color: var(--color-base-dark);
 		--text-color: var(--color-dark-text);
+		--title: var(--color-title-all);
+  		--shadow: var(--color-title-shadow);
+  		--box-shadow: var(--color-box-shadow);
+  		--card-box-shadow: var(--color-card-box-shadow);
 	    --bg-color-glare: #000000;
 	    --color-primary: #1c9d68;
 	    --color-primary-glare: #f4d0df;	  
