@@ -4,11 +4,11 @@
 
   <div class="repel ontop" style="--gap: 0;">
     {% set activePage = page.url | url %}
-
-    {% include "partials/menu.njk" %}
-    <a href="/" class="logo | cluster" {% if activePage === '/' %} aria-current="page" {% endif %}>
+ <a href="/" class="logo | cluster" {% if activePage === '/' %} aria-current="page" {% endif %}>
 	
 			<h3 style="-webkit-text-stroke: 1px var(--text-color); color: transparent">{{ meta.siteName }}</h3>
 			</a>
+    {% include "partials/menu.njk" %}
+   
   </div>
 </header>
