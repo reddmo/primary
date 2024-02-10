@@ -46,9 +46,10 @@ module.exports = {
     closedText: 'Menu'
   },
   themeSwitch: {
-    title: 'theme',
+    title: 'Theme',
     light: 'light',
-    dark: 'dark'
+    dark: 'dark',
+    initial: 'select'
   },
   greenweb: {
     // this goues into src/common/greenweb.njk
