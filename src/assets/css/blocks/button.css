@@ -48,9 +48,9 @@
   --button-border: var(--color-link);
 }
 
-.button:active {
+/* .button:active {
   transform: scale(99%);
-}
+} */
 
 .button:where(:has(svg)) {
   display: flex;
