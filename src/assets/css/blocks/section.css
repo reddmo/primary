@@ -19,10 +19,10 @@
   var(--color-head) 90% 100%); */
  /* color: #ffffff; */
  background-image: linear-gradient(-45deg,
- var(--color-date) 10%,
+ var(--color-date) 5%,
  var(--color-link) 30%,
  var(--color-head) 30%,
- var(--bg-color) 100%);
+ var(--bg-color) 95%);
 }
 
 .section__inners {
