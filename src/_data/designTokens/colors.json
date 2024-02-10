@@ -32,7 +32,7 @@
     },
     {
       "name": "Card Light",
-      "value": "#dadfe1"
+      "value": "#c9cfd1"
     },
     {
       "name": "Card Dark",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Card Link Dark",
-      "value": "#f2a127"
+      "value": "#f89406"
     },  
     {
       "name": "Link Light",
@@ -52,7 +52,7 @@
     }, 
     {
       "name": "Link Dark",
-      "value": "#fc9903"
+      "value": "#f89406"
     },  
     {
       "name": "Card Border Light",

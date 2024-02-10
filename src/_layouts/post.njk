@@ -10,7 +10,7 @@ schema: blog
 
 <article class="region blog" style="--region-space-top: var(--space-l-xl)">
   <div class="wrapper flow prose">
-    <h1 style="color: var(--color-head)">{{ title }}</h1>
+    <h2 style="color: var(--color-head)">{{ title }}</h2>
 
     <!-- image -->
     {% if image %}{% eleventyImage image, alt or title, null, "eager", "feature" %} {%
