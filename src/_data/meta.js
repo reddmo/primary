@@ -46,7 +46,7 @@ module.exports = {
     closedText: 'Menu'
   },
   themeSwitch: {
-    title: 'mode',
+    title: 'theme',
     light: 'light',
     dark: 'dark'
   },

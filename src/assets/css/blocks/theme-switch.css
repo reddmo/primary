@@ -1,14 +1,25 @@
 .theme-switch h2 {
-  font-size: var(--size-step-min-1);
-  font-family: var(--font-base);
+  font-size: var(--size-step-min-2);
+  text-transform: uppercase;
 }
 
 .theme-switch .button {
-  --button-border: var(--color-date);
-/*  border-radius: 50%; */
-  font-size: var(--size-step-5);
-  padding: 0.1rem 0;
-  font-weight: 600;
+  --button-bg: var(--color-link);
+  --button-text: var(--bg-color);
+  --button-border: var(--color-link);
+  font-size: var(--size-step-min-2);
+  text-transform: uppercase;
+  padding: 0.3rem 0.625rem;
+  font-weight: 700;
+}
+
+.theme-switch .button:hover,
+.theme-switch .button[aria-current='page'],
+.theme-switch .button[aria-pressed='true'] {
+  background-size: 150% 150%;
+  --button-bg: var(--bg-color);
+  --button-text: var(--text-color);
+  --button-border: var(--color-link);
 }
 
 .theme-switch .button2 {

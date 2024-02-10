@@ -37,14 +37,15 @@
 							<a href="{{ value }}" rel="me">
 								<span class="visually-hidden">{{ key | capitalize }}</span>
 								<div aria-hidden="true">{% include 'svg/social-' + key + '.svg' %}</div>
-							</a>
+							</a> 
 							{% endif %}
 
 
 					{% endfor %}
         </nav>
+        
     </div>
-
+<br>{% include 'components/theme-switch.njk' %}
 <!--		<div
 		role="region"
 		class="theme-switch | cluster mt-xs"
@@ -70,5 +71,5 @@
 		>
 		</div> -->
   </div>
-
+    
 </footer>
