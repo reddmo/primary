@@ -18,6 +18,11 @@
   var(--color-link) 10% 90%,
   var(--color-head) 90% 100%); */
  /* color: #ffffff; */
+ background-image: linear-gradient(-45deg,
+ var(--color-date),
+ var(--color-link) 30%,
+ var(--color-head) 30%,
+ var(--bg-color) 100%);
 }
 
 .section__inners {
