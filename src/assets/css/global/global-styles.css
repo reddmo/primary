@@ -38,6 +38,7 @@ h1 {
 
 h2 {
   font-size: var(--size-step-3);
+  text-shadow: 4px 4px var(--color-card);
 }
 
 h3 {
