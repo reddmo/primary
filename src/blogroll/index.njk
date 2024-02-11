@@ -7,24 +7,26 @@ eleventyNavigation:
   key: Blogroll
   order: 2
 ---
-
-<ul class="blogcards | grid"
+<article class="wrapper">
+<ul
+    class="blogcards | grid"
     role="list"
     data-rows="masonry"
-    data-layout="50-50">
+    data-layout="50-50"
+    >
     {% for blog in blogData %}
     <li class="card">
-      <h2>
+      <h3>
         	<img alt="none" class="blogroll" src="{{ blog.favicon }}" width="24px" height="24px" loading="lazy" decoding="async" /> 
             <a href="{{ blog.url | url }}" target="_blank">
             {{ blog.name }}
-            </a></h2>
+            </a></h3>
            <span class="text-right">{{ blog.cleansedUrl }}</span><br>
        
 
         {% if blog.latestPost and blog.latestPost.title %}
         <span class="text-step-min-1">
-                    <b>Latest post:</b><br>
+                    <b>Latest post {% include 'svg/chevrons-right.svg' %}</b>
             <a href="{{ blog.latestPost.url |url }}" target="_blank">
                 {{ blog.latestPost.title }}
             </a>
@@ -34,3 +36,4 @@ eleventyNavigation:
     {% endfor %} 
 
 </ul>
+</article>

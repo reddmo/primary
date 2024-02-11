@@ -45,6 +45,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  background-image: none !important;
 }
 
 .blogcards {
