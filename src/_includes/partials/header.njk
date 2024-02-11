@@ -6,7 +6,7 @@
     {% set activePage = page.url | url %}
  <a href="/" class="logo | cluster" {% if activePage === '/' %} aria-current="page" {% endif %}>
 	
-			<h3 style="-webkit-text-stroke: .035em var(--text-color); color: transparent">{{ meta.siteName }}</h3>
+			<h3 class="gradient-text-linear">{{ meta.siteName }}</h3>
 			</a>
     {% include "partials/menu.njk" %}
    
