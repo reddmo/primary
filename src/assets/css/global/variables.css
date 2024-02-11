@@ -11,10 +11,10 @@
   --tracking-wide: 0.05ch;
 
   --gradient-rainbow: linear-gradient(
-    90deg,
-    var(--color-head),
-    var(--color-date),
-    var(--color-link)
+    45deg,
+    var(--color-link) 30%,
+    var(--color-head) 30%,
+    var(--color-date) 100%
   );
   --gradient-conic: conic-gradient(
     var(--color-primary) 0 28%,
