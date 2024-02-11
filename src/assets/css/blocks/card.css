@@ -1,6 +1,6 @@
 .card {
   background-color: var(--color-card);
-  border: 2px solid var(--bg-color-accent);
+  border: .1em solid var(--bg-color-accent);
   color: var(--color-card-text);
   text-wrap: balance;
   padding: var(--space-m-l);
@@ -27,7 +27,7 @@
 
 .card:hover,
 .card:focus-within {
-  border: 2px solid var(--color-card-link);
+  border: .1em solid var(--color-card-link);
 }
 
 /* 'clickable' */
