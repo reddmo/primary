@@ -12,6 +12,10 @@ module.exports = {
       text: 'blog',
       url: '/blog/page-0/'
     },
+    {
+      text: 'blogroll',
+      url: '/blogroll/'
+    },
   ],
   bottom: [
     {
