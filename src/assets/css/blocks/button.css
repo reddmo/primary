@@ -39,6 +39,7 @@
   text-align: center;
 }
 
+
 .button:hover,
 .button[aria-current='page'],
 .button[aria-pressed='true'] {
