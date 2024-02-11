@@ -1,6 +1,7 @@
 .theme-switch h2 {
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
+  text-shadow: none !important;
 }
 
 .theme-switch .button {
