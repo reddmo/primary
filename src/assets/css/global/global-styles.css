@@ -153,6 +153,7 @@ main:focus {
 }
 .comment a:has(img) {
   border: none;
+  background-image: none !important;
 }
 .comment-author {
   grid-area: image;
@@ -179,4 +180,5 @@ main:focus {
 .reposts a:has(img) {
   border: none;
   margin: -5px;
+  background-image: none !important;
 }
