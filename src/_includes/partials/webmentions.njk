@@ -25,7 +25,7 @@
   <h4 style="color: var(--color-date)">Reposts ({{ mentions.reposts | length }})</h4>
   <div class="reposts">
     {% for item in mentions.reposts %}
-      <a href="{{ item.url }}"><img src="{{ item.photo }}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
+      <a href="{{ item.url }}" style="background-image: none !important"><img src="{{ item.photo }}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
     {% endfor %}
   </div>
   {% endif %}
