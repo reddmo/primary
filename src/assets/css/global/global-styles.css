@@ -154,6 +154,10 @@ main:focus {
 .comment a:has(img) {
   border: none;
 }
+.comment a:after {
+  border: none;
+  background-image: none !important;
+}
 .comment-author {
   grid-area: image;
   grid-row: 1 / span 2;
@@ -179,4 +183,9 @@ main:focus {
 .reposts a:has(img) {
   border: none;
   margin: -5px;
+}
+.likes a:after,
+.reposts a:after {
+  border: none;
+  background-image: none !important;
 }
