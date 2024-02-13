@@ -5,20 +5,22 @@
 }
 
 .post-tag {
-  --button-bg: var(--color-link);
-  --button-text: var(--bg-color);
-  --button-border: var(--color-link);
+  background-color: var(--color-link);
+  color: var(--bg-color);
+  border: 2px solid var(--color-link);
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
-  padding: 0.3rem 0.625rem;
+  padding: 0.2rem var(--space-xs);
   font-weight: 700;
+  text-decoration: none !important;
 }
 
 .card .post-tag {
-  --button-bg: var(--color-date);
-  --button-text: var(--bg-color);
-  --button-border: none;
+  background-color: var(--color-date);
+  color: var(--bg-color);
+  border: none;
   margin-inline-start: var(--space-s-m);
+    text-decoration: none !important;
 }
 
 /* layout */

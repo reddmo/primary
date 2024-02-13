@@ -1,57 +1,49 @@
 .button {
-  color: var(--button-text, var(--text-color));
-  background-color: var(--button-bg, var(--bg-color));
-  border: 2px solid var(--button-border, var(--text-color));
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border: 2px solid var(--text-color);
   border-radius: none !important;
   box-shadow: 5px 5px var(--box-shadow);
   display: inline-block;
   font: inherit;
-  padding: 0.3rem var(--space-s);
+  padding: 0.2rem var(--space-xs);
   font-weight: 700;
   text-decoration: none;
   text-align: center;
 }
 
- .button2 {
-  color: var(--button-text, var(--text-color));
-  background-color: var(--button-bg, var(--bg-color));
- /* border: 2px solid var(--button-border, var(--text-color));
-  border-radius: var(--border-radius); */
-  display: inline-block;
-  font: inherit;
- /* padding: 0.3rem var(--space-s);
-  font-weight: 700; */
-  text-decoration: none;
-  text-align: center;
-}
 
- .button3 {
-  color: var(--button-text, var(--text-color));
-  background-color: var(--button-bg, var(--bg-color));
-  border: 2px solid var(--button-border, var(--color-link));
-  border-radius: none !important; 
-  box-shadow: 5px 5px var(--box-shadow);
+.menu {
+  background-color: var(--color-link);
+  color: var(--bg-color);
+  border: 2px solid var(--color-link);
+  font-size: var(--size-step-min-2);
   display: inline-block;
-  font: inherit;
-  padding: 0.3rem var(--space-s);
+  gap: var(--space-s);
+  text-transform: uppercase;
+  padding: 0.2rem var(--space-xs);
   font-weight: 700;
-  text-decoration: none;
-  text-align: center;
 }
 
+.menu:hover,
+.menu[aria-current='page'],
+.menu[aria-pressed='true'] {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--color-link);
+}
 
 .button:hover,
 .button[aria-current='page'],
 .button[aria-pressed='true'] {
-  background-size: 150% 150%;
-  --button-bg: var(--bg-color);
-  --button-text: var(--text-color);
-  --button-border: var(--color-link);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--color-link);
 }
 
 /* .button:active {
   transform: scale(99%);
-} */
+}  */
 
 .button:where(:has(svg)) {
   display: flex;
@@ -61,7 +53,7 @@
 
 .button:where(:has(.visually-hidden)) {
   border-radius: 50%;
-  padding: 0.5em;
+  padding: 0.2em;
 }
 
 /* all buttons have a min size */
@@ -70,6 +62,6 @@
   min-inline-size: 6ch;
 }
 
-.button:where(:not(:has(.visually-hidden))) {
+/* .button:where(:not(:has(.visually-hidden))) {
   padding: var(--button-padding, 0.35em 1em);
-}
+} */

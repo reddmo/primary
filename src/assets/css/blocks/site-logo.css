@@ -1,5 +1,5 @@
 .logo {
-  --gutter: var(--space-xs);
+  --gutter: var(--space-m);
   padding: var(--space-s) 0;
   font-size: var(--size-step-0);
   font-weight: bold;

@@ -1,9 +1,9 @@
 /* Basic link styling */
 .site-nav ul {
   list-style: none;
-  margin: 0;
+  margin: 0.5em;
   gap: var(--space-s);
-  line-height: 0.5em;
+/*  line-height: 0.5em; */
   padding-block-end: var(--space-s);
 }
 
@@ -11,9 +11,9 @@
 /*  --menu-color: var(--text-color);
   --background-color: var(--bg-color); */
   --border-color: var(--color-date); 
-  padding: var(--space-s);
+  padding: 0.3rem var(--space-xs);
   text-decoration: none;
-  display: block;
+  display: inline-block;
   border-radius: none important!;
  /* border: 1.25px solid var(--border-color); */
 }
@@ -36,18 +36,18 @@
 @media screen(md) {
   /* Basic link styling */
   .site-nav ul {
-    padding-block-end: 0;
+    padding-block-end: var(--space-s);
   }
 
   .site-nav a {
 /*    --menu-color: var(--text-color);
     --background-color: transparent; */
     --border-color: transparent;
-    --text-decoration: transparent;
+    --text-decoration: none;
 /*    background-color: var(--background-color); */
     color: var(--bg-color);
-    padding: var(--space-xs) 0.2em;
-    text-decoration-line: underline;
+    padding: 0.3rem var(--space-xs);
+    text-decoration-line: none;
     text-decoration-color: var(--text-decoration, transparent);
     text-decoration-thickness: 3px;
     text-underline-offset: 0.2em; 
