@@ -25,9 +25,9 @@ eleventyNavigation:
        
 
         {% if blog.latestPost and blog.latestPost.title %}
-        <span class="text-step-min-1">
+        <span class="text-step-min-1" >
                     <b>Latest post {% include 'svg/chevrons-right.svg' %}</b>
-            <a href="{{ blog.latestPost.url |url }}" target="_blank">
+            <a style="text-decoration: none !important" href="{{ blog.latestPost.url |url }}" target="_blank">
                 {{ blog.latestPost.title }}
             </a>
         </span>

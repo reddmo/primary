@@ -23,12 +23,13 @@
 }
 .card h2 a,
 .card h3 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .card:hover,
 .card:focus-within {
   border: .15em solid var(--color-card-link);
+  text-decoration: none !important;
 }
 
 /* 'clickable' */
@@ -47,6 +48,7 @@
   right: 0;
   top: 0;
   background-image: none !important;
+  text-decoration: none !important;
 }
 
 .blogcards {
