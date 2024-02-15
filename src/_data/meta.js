@@ -43,8 +43,8 @@ module.exports = {
     ariaTop: 'Main',
     ariaBottom: 'Complementary',
     ariaSocial: 'Social',
-    drawerNav: 'true',
-    closedText: 'Menu'
+    drawerNav: true,
+    navLabel: 'menu'
   },
   themeSwitch: {
     title: 'Theme',
