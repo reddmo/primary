@@ -17,7 +17,7 @@
   margin: 0;
   line-height: 0.5em;
   padding: var(--nav-list-padding, var(--space-2xl) var(--space-s));
-  background: var(--nav-list-background, var(--color-bg));
+  background: var(--nav-list-background, var(--bg-color));
   box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
   flex-direction: var(--nav-list-layout, column);
   block-size: var(--nav-list-height, 100vh);
@@ -45,31 +45,28 @@
 
 /* Basic link styling */
 .site-nav-drawer a {
-  --text-color: var(--color-text);
-  --background-color: var(--color-bg);
-  --border-color: transparent;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  /* background-color: var(--link-color);
+  color: var(--text-color); */
   padding: var(--anchor-padding, var(--space-s));
   text-decoration: none;
   display: block;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
+  border-radius: none;
+/*  border: 1px solid transparent; */
 }
 
 /* Change the border-color on :hover and :focus */
 .site-nav-drawer a:where(:hover, :focus) {
-  --background-color: var(--color-bg-accent);
-  --text-color: var(--color-text-accent);
-  --border-color: var(--color-bg-accent);
+ /* background-color: var(--color-link);
+  color: var(--text-color);
+  border-color: transparent; */
 }
 
 /* Change border-color and color for the active page */
 .site-nav-drawer [aria-current='page'],
 .site-nav-drawer [data-state='active'] {
-  --background-color: var(--color-bg-accent);
-  --text-color: var(--color-text);
-  --border-color: var(--color-bg-accent);
+/*  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--color-link); */
 }
 
 /* Reset button styling */
@@ -95,7 +92,7 @@
   block-size: 100%;
   inline-size: auto;
   transform: translateY(-0.1em);
-  color: var(--color-text);
+  color: var(--text-color);
 }
 
 .site-nav-drawer [aria-expanded='true'] svg {
@@ -123,9 +120,9 @@
   .site-nav-drawer a {
     --anchor-padding: var(--space-xs) 0.2em;
     --text-color: var(--color-text);
-    --background-color: transparent;
+ /*   --background-color: transparent;
     --border-color: transparent;
-    --text-decoration: transparent;
+    --text-decoration: transparent; */
     text-decoration-line: underline;
     text-decoration-color: var(--text-decoration, transparent);
     text-decoration-thickness: 3px;
@@ -133,18 +130,18 @@
   }
 
   .site-nav-drawer a:where(:hover, :focus) {
-    --text-color: var(--color-text);
-    --background-color: transparent;
-    --border-color: transparent;
-    --text-decoration: var(--color-text-accent);
+/*    color: var(--text-color);
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: var(--color-text-accent); */
   }
 
   /* Change border-color and color for the active page */
   .site-nav-drawer [aria-current='page'],
   .site-nav-drawer [data-state='active'] {
-    --text-color: var(--color-primary);
-    --background-color: transparent;
-    --border-color: transparent;
-    --text-decoration: var(--color-primary);
+ /*   color: var(--color-link);
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: var(--color-primary); */
   }
 }
