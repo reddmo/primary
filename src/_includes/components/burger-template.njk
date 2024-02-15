@@ -4,10 +4,10 @@
 
 <template id="burger-template">
   <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
-    <span>{{ meta.navigation.navLabel }}</span>
+    <span class="gradient-text-var">{{ meta.navigation.navLabel }}</span>
 
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+   {   xmlns="http://www.w3.org/2000/svg"
       width="1em"
       height="1em"
       viewBox="0 0 24 24"
@@ -18,7 +18,7 @@
       stroke-linejoin="round"
     >
       <path d="M5 12h14" />
-      <path d="M12 5v14" />
+      <path d="M12 5v14" />}
     </svg>
   </button>
 </template>

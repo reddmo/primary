@@ -16,6 +16,12 @@
     var(--color-head) 30%,
     var(--color-date) 100%
   );
+  --gradient-rainbow-var: linear-gradient(
+  	-45deg,
+ 	var(--color-link) 30%,
+ 	var(--color-head) 30%,
+ 	var(--bg-color) 100%
+  );
   --gradient-conic: conic-gradient(
     var(--color-primary) 0 28%,
     var(--color-secondary) 0 67%,

@@ -13,3 +13,11 @@
   background-repeat: repeat;
   background-clip: text;
 }
+
+.gradient-text-var {
+  color: transparent;
+  background-image: var(--gradient-rainbow-var);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+} 

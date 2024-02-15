@@ -91,8 +91,8 @@
 .site-nav-drawer svg {
   block-size: 100%;
   inline-size: auto;
-  transform: translateY(-0.1em);
-  color: var(--text-color);
+ /* transform: translateY(0.1em); */
+  color: var(--color-link);
 }
 
 .site-nav-drawer [aria-expanded='true'] svg {
