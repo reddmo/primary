@@ -82,16 +82,16 @@
 }
 
 .site-nav-drawer span {
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-2);
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding-inline-end: var(--space-2xs);
 }
 
 .site-nav-drawer svg {
   block-size: 100%;
   inline-size: auto;
- /* transform: translateY(0.1em); */
+  transform: translateY(0.1em);
   color: var(--color-link);
 }
 
