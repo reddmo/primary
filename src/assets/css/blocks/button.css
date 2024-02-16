@@ -6,7 +6,7 @@
   box-shadow: 5px 5px var(--box-shadow);
   display: inline-block;
   font: inherit;
-  padding: 0.2rem var(--space-xs);
+  padding: 0.3rem 0.625rem;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
@@ -21,7 +21,7 @@
   display: inline-block;
   gap: var(--space-s);
   text-transform: uppercase;
-  padding: 0.2rem var(--space-xs);
+  padding: 0.3rem 0.625rem;
   font-weight: 700;
 }
 

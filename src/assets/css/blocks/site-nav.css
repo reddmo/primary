@@ -10,7 +10,7 @@
 .site-nav a {
 /*  --menu-color: var(--text-color);
   --background-color: var(--bg-color); */
-  --border-color: var(--color-date); 
+ /* border-color: var(--color-date); */
   padding: 0.3rem var(--space-xs);
   text-decoration: none;
   display: inline-block;
@@ -22,7 +22,7 @@
 .site-nav a:where(:hover, :focus) {
 /*  --background-color: var(--menu-color);
   --menu-color: var(--text-color); */
-  --border-color: var(--color-link);
+  border-color: var(--color-link);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
@@ -30,7 +30,7 @@
 .site-nav [data-state='active'] {
 /*  --background-color: var(--menu-color);
   --menu-color: var(--bg-color); */
-  --border-color: none !important;
+  border-color: none !important;
 }
 
 @media screen(md) {
@@ -42,8 +42,8 @@
   .site-nav a {
 /*    --menu-color: var(--text-color);
     --background-color: transparent; */
-    --border-color: transparent;
-    --text-decoration: none;
+    border-color: transparent;
+    text-decoration: none;
 /*    background-color: var(--background-color); */
     color: var(--bg-color);
     padding: 0.3rem var(--space-xs);
@@ -68,6 +68,6 @@
     color: var(--text-color);
  /*   --menu-color: var(--color-date);
     --background-color: transparent; */
-    --border-color: var(--bg-color);
+    border-color: var(--bg-color);
   }
 }

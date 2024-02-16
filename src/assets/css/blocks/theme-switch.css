@@ -26,7 +26,7 @@
 .button[aria-current='page'],
 .button[aria-pressed='true'] {
   background-color: var(--bg-color);
-  color: var(--color-link);
+  color: var(--text-color);
   border: 2px solid var(--color-link);
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
