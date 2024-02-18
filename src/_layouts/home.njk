@@ -4,7 +4,7 @@ masonry: true
 ---
 
 <div class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-primary)">
+  <header class="full | section" style="--spot-color: var(--bg-color)">
     <div class="section__inner flow region">
     <!--     <h2 class="text-right text-base-light" style="color: transparent; -webkit-text-stroke: 2px #050709; text-indent: 60%">{{ title }}</h2> -->
     </div>
@@ -20,7 +20,7 @@ masonry: true
 
   <section class="full | region">
     <div class="wrapper flow prose">
-      <h3>{{ blog.title }}</h3>
+      <h2>{{ blog.title }}</h2>
       <!-- blog intro text is optional. -->
 
       {% if blog.intro %}

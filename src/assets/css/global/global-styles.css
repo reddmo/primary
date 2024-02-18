@@ -25,7 +25,8 @@ main {
 /* Base typesetting */
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.2;
   letter-spacing: var(--tracking-s);
   font-weight: 700;
@@ -38,11 +39,15 @@ h1 {
 
 h2 {
   font-size: var(--size-step-3);
-  text-shadow: 1px 1px #050709;
+  text-shadow: 2px 2px var(--box-shadow);
 }
 
 h3 {
   font-size: var(--size-step-2);
+}
+
+h4 {
+  font-size: var(--size-step-min-1);
 }
 
 /* Set line lengths */

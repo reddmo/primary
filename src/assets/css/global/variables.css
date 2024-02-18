@@ -101,33 +101,35 @@
 	    --color-title: var(--color-title-dark);   
 	    
 	    }
+	    --bg-color-accent-2: color-mix(in oklab, var(--bg-color) 80%, var(--text-color));
+	    
     /* less "intensity" with color-mix */
- /*   --text-color-accent: color-mix(
-      in oklab,
-      var(--color-base-light) 70%,
-      var(--bg-color)
+    /* --text-color-accent: color-mix(
+       in oklab,
+       var(--color-base-light) 70%,
+       var(--bg-color)
     );
-    --bg-color-accent: color-mix(in oklab, var(--bg-color) 92%, var(--text-color)); */
-    --bg-color-accent-2: color-mix(in oklab, var(--bg-color) 80%, var(--text-color));
+       --bg-color-accent: color-mix(in oklab, var(--bg-color) 92%, var(--text-color)); */
+
 
     /* add opacity with color-mix */
-/*    --color-primary: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);
-    --color-secondary: color-mix(
-      in oklab,
-      var(--color-secondary-highlight),
-      transparent 20%
+	/* --color-primary: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);
+       --color-secondary: color-mix(
+       in oklab,
+       var(--color-secondary-highlight),
+       transparent 20%
     );
-    --color-tertiary: color-mix(
-      in oklab,
-      var(--color-tertiary-highlight),
-      transparent 20%
+       --color-tertiary: color-mix(
+       in oklab,
+       var(--color-tertiary-highlight),
+       transparent 20%
     ); */
 
     /* desaturate with CSS Relative colors */
-/*    @supports (color: hsl(from white h s l)) {
-      --color-primary: hsl(from var(--color-primary-highlight) h calc(s - 0.2) l);
-      --color-secondary: hsl(from var(--color-secondary-highlight) h calc(s - 0.2) l);
-      --color-tertiary: hsl(from var(--color-tertiary-highlight) h calc(s - 0.2) l);
+	/* @supports (color: hsl(from white h s l)) {
+       --color-primary: hsl(from var(--color-primary-highlight) h calc(s - 0.2) l);
+       --color-secondary: hsl(from var(--color-secondary-highlight) h calc(s - 0.2) l);
+       --color-tertiary: hsl(from var(--color-tertiary-highlight) h calc(s - 0.2) l);
     }
   } */
 }
@@ -164,18 +166,18 @@
   --bg-color-accent-2: color-mix(in oklab, var(--bg-color) 80%, var(--text-color));
 
   /* add opacity with color-mix */
-/*  --color-primary: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);
-  --color-secondary: color-mix(
-    in oklab,
-    var(--color-secondary-highlight),
-    transparent 20%
+  /* --color-primary: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);
+  	 --color-secondary: color-mix(
+     in oklab,
+     var(--color-secondary-highlight),
+     transparent 20%
   );
-  --color-tertiary: color-mix(in oklab, var(--color-tertiary-highlight), transparent 20%);
-*/
+     --color-tertiary: color-mix(in oklab, var(--color-tertiary-highlight), transparent 20%);
+  */
   /* desaturate with CSS Relative colors */
-/*  @supports (color: hsl(from white h s l)) {
-    --color-primary: hsl(from var(--color-primary-highlight) h calc(s - 0.2) l);
-    --color-secondary: hsl(from var(--color-secondary-highlight) h calc(s - 0.2) l);
-    --color-tertiary: hsl(from var(--color-tertiary-highlight) h calc(s - 0.2) l);
+  /* @supports (color: hsl(from white h s l)) {
+     --color-primary: hsl(from var(--color-primary-highlight) h calc(s - 0.2) l);
+     --color-secondary: hsl(from var(--color-secondary-highlight) h calc(s - 0.2) l);
+     --color-tertiary: hsl(from var(--color-tertiary-highlight) h calc(s - 0.2) l);
   }*/
 } 
