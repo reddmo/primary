@@ -1,7 +1,7 @@
 code {
   --color-code-red: var(--color-primary);
   --color-code-orange: hsl(30, 70%, 60%);
-  --color-code-yellow: var(--color-terriary);
+  --color-code-yellow: var(--color-tertiary);
   --color-code-blue: var(--color-secondary);
   --color-code-indigo: hsl(260, 48%, 56%);
   --color-code-violet: hsl(314, 70%, 60%);
