@@ -36,4 +36,9 @@ eleventyNavigation:
     {% endfor %} 
 
 </ul>
+<br>
+{% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
+{% if  mentions.mentionCount > 0 %}
+  {% include 'partials/webmentions.njk' %}
+{% endif %}
 

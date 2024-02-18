@@ -139,12 +139,12 @@ main:focus {
   width: 3em !important;
 }
 .mention-image:is(:hover, :focus) {
-  border: 2px solid var(--color-date);
+  border: 5px solid var(--color-date);
 }
 
 .comment {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-rows: auto auto;
   grid-template-areas:
     "image content"
@@ -161,7 +161,7 @@ main:focus {
 .comment-author {
   grid-area: image;
   grid-row: 1 / span 2;
-  align-self: center;
+  align-self: left;
   justify-self: center;
 }
 .comment-content {
@@ -171,6 +171,7 @@ main:focus {
   font-size: var(--size-step-0);
   justify-self: left;
   line-height: 1;
+  color: var(--color-date);
 }
 .likes,
 .reposts {
