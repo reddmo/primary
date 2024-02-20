@@ -8,29 +8,29 @@
 }
 
 .site-nav a {
-/*  --menu-color: var(--text-color);
-  --background-color: var(--bg-color); */
- /* border-color: var(--color-date); */
+	/* --menu-color: var(--text-color);
+ 	   --background-color: var(--bg-color); */
+ 	/* border-color: var(--color-date); */
   padding: 0.3rem var(--space-xs);
   text-decoration: none;
   display: inline-block;
   border-radius: none important!;
- /* border: 1.25px solid var(--border-color); */
+  border-color: var(--color-link);
 }
 
 /* Change the border-color on :hover and :focus */
 .site-nav a:where(:hover, :focus) {
-/*  --background-color: var(--menu-color);
-  --menu-color: var(--text-color); */
+	/*  --background-color: var(--menu-color);
+  		--menu-color: var(--text-color); */
   border-color: var(--color-link);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
 .site-nav [aria-current='page'],
 .site-nav [data-state='active'] {
-/*  --background-color: var(--menu-color);
-  --menu-color: var(--bg-color); */
-  border-color: none !important;
+	/*  --background-color: var(--menu-color);
+  		--menu-color: var(--bg-color); 
+  border-color: none !important;*/
 }
 
 @media screen(md) {
@@ -40,34 +40,34 @@
   }
 
   .site-nav a {
-/*    --menu-color: var(--text-color);
-    --background-color: transparent; */
     border-color: transparent;
     text-decoration: none;
-/*    background-color: var(--background-color); */
     color: var(--bg-color);
     padding: 0.3rem var(--space-xs);
-    text-decoration-line: none;
+    /* --menu-color: var(--text-color);
+       --background-color: transparent; */
+    /*  background-color: var(--background-color); */
+    /*  text-decoration-line: none;
     text-decoration-color: var(--text-decoration, transparent);
     text-decoration-thickness: 3px;
-    text-underline-offset: 0.2em; 
+    text-underline-offset: 0.2em; */
   }
 
   /* Change the border-color on :hover and :focus */
   .site-nav a:where(:hover, :focus) {
-  /*  --text-decoration: var(--text-color-accent); */
+     /* --text-decoration: var(--text-color-accent); */
     color: var(--text-color);
- /*   --menu-color: var(--text-color);
-    --background-color: transparent; */
+     /* --menu-color: var(--text-color);
+    	--background-color: transparent; */
   }
 
   /* Change border-color and color for the active page */
   .site-nav [aria-current='page'],
   .site-nav [data-state='active'] {
- /*   --text-decoration: var(--text-color); */
+ 	 /* --text-decoration: var(--text-color); */
     color: var(--text-color);
- /*   --menu-color: var(--color-date);
-    --background-color: transparent; */
-    border-color: var(--bg-color);
+  	 /* --menu-color: var(--color-date);
+        --background-color: transparent; */
+     /* border-color: var(--bg-color); */
   }
 }

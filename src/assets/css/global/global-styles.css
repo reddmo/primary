@@ -77,7 +77,7 @@ svg {
   block-size: 2ex;
   inline-size: auto;
   flex: none;
-  color: var(--text-color);
+  color: var(--color-head);
 }
 
 [role='list'] {
