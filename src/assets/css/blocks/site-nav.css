@@ -14,7 +14,7 @@
   padding: 0.3rem var(--space-xs);
   text-decoration: none;
   display: inline-block;
-  border-radius: none important!;
+  border-radius: var(--border-radius);
   border-color: var(--color-link);
 }
 
