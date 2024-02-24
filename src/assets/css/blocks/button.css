@@ -6,9 +6,9 @@
   box-shadow: 5px 5px var(--box-shadow);
   display: inline-block;
   font: inherit;
-  padding: 0.3rem 0.625rem;
+  padding: 0.3rem var(--space-xs);
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: center;
 }
 
@@ -19,7 +19,6 @@
   border: 2px solid var(--color-link);
   font-size: var(--size-step-min-2);
   display: inline-block;
-  gap: var(--space-s);
   text-transform: uppercase;
   padding: 0.3rem var(--space-xs);
   font-weight: 700;
@@ -41,19 +40,18 @@
   border: 2px solid var(--color-link);
 }
 
-/* .button:active {
+ .button:active {
   transform: scale(99%);
-}  */
+}  
 
 .button:where(:has(svg)) {
-  display: flex;
+  display: inline-block;
   gap: 0.5em;
   align-items: center;
 }
 
 .button:where(:has(.visually-hidden)) {
   border-radius: var(--border-radius);
-  padding: 0.2em;
 }
 
 /* all buttons have a min size */

@@ -3,14 +3,14 @@
   list-style: none;
   margin: 0.5em;
   gap: var(--space-s);
-/*  line-height: 0.5em; */
-  padding-block-end: var(--space-s);
+  /*line-height: 0.5em;
+  padding-block-end: var(--space-s);*/
 }
 
 .site-nav a {
 	/* --menu-color: var(--text-color);
- 	   --background-color: var(--bg-color); */
- 	/* border-color: var(--color-date); */
+ 	   --background-color: var(--bg-color); 
+ 	   border-color: var(--color-date); */
   padding: 0.3rem var(--space-xs);
   text-decoration: none;
   display: inline-block;
@@ -36,7 +36,9 @@
 @media screen(md) {
   /* Basic link styling */
   .site-nav ul {
-    padding-block-end: var(--space-s);
+  list-style: none;
+  gap: var(--space-s);
+  /*  padding-block-end: var(--space-s); */
   }
 
   .site-nav a {
@@ -45,29 +47,29 @@
     color: var(--bg-color);
     padding: 0.3rem var(--space-xs);
     /* --menu-color: var(--text-color);
-       --background-color: transparent; */
-    /*  background-color: var(--background-color); */
-    /*  text-decoration-line: none;
-    text-decoration-color: var(--text-decoration, transparent);
-    text-decoration-thickness: 3px;
-    text-underline-offset: 0.2em; */
+       --background-color: transparent; 
+       background-color: var(--background-color); 
+       text-decoration-line: none;
+       text-decoration-color: var(--text-decoration, transparent);
+       text-decoration-thickness: 3px;
+       text-underline-offset: 0.2em; */
   }
 
   /* Change the border-color on :hover and :focus */
   .site-nav a:where(:hover, :focus) {
-     /* --text-decoration: var(--text-color-accent); */
-    color: var(--text-color);
-     /* --menu-color: var(--text-color);
+  	 color: var(--text-color);
+     /* --text-decoration: var(--text-color-accent);
+		--menu-color: var(--text-color);
     	--background-color: transparent; */
   }
 
   /* Change border-color and color for the active page */
   .site-nav [aria-current='page'],
   .site-nav [data-state='active'] {
- 	 /* --text-decoration: var(--text-color); */
-    color: var(--text-color);
-  	 /* --menu-color: var(--color-date);
-        --background-color: transparent; */
-     /* border-color: var(--bg-color); */
+  	color: var(--text-color);
+ 	 /* --text-decoration: var(--text-color);
+  	 	--menu-color: var(--color-date);
+        --background-color: transparent; 
+     	border-color: var(--bg-color); */
   }
 }

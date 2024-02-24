@@ -8,9 +8,10 @@
   background-color: var(--color-link);
   color: var(--bg-color);
   border: 2px solid var(--color-link);
+  border-radius: var(--border-radius);
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
-  padding: 0.2rem var(--space-xs);
+  padding: 0.3rem var(--space-xs);
   font-weight: 700;
   text-decoration: none !important;
 }
@@ -20,7 +21,7 @@
   color: var(--bg-color);
   border: none;
   margin-inline-start: var(--space-s-m);
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 /* layout */
