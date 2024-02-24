@@ -17,11 +17,14 @@
   background-color: var(--color-link);
   color: var(--bg-color);
   border: 2px solid var(--color-link);
+  border-radius: var(--border-radius);
   font-size: var(--size-step-min-2);
   display: inline-block;
   text-transform: uppercase;
   padding: 0.3rem var(--space-xs);
   font-weight: 700;
+  text-decoration: none !important;
+  text-align: center;
 }
 
 .menu:hover,
@@ -42,7 +45,17 @@
 
  .button:active {
   transform: scale(99%);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--color-head);  
 }  
+
+ .menu:active {
+  transform: scale(99%);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--color-head);  
+} 
 
 .button:where(:has(svg)) {
   display: inline-block;

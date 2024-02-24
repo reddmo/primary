@@ -9,11 +9,11 @@ eleventyComputed:
   title: '{{ meta.blog.tagSingle }}: {{ tag }}'
 ---
 
-<ul class="taglist | my-s-m cluster" role="list">
+<ul class="nav; taglist | my-s-m cluster" role="list">
   {% for tag in collections.tagList %}
  <li><a
     href="/tags/{{ tag }}"
-    class="button menu"
+    class="menu"
     {{
     helpers.getLinkActiveState('/tags/' + tag,
     page.url)
