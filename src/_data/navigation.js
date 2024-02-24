@@ -13,14 +13,14 @@ module.exports = {
       url: '/blog/page-0/'
     },
     {
-      text: 'blogroll',
-      url: '/blogroll/'
-    },
+      text: 'tags',
+      url: '/tags/'
+    }
   ],
   bottom: [
     {
-      text: 'privacy',
-      url: '/privacy/'
+      text: 'blogroll',
+      url: '/blogroll/'
     }
   ]
 };
