@@ -1,4 +1,22 @@
 <div class="webmentions" id="webmentions">
+  {% if mentions.likes %}
+  <h4 style="color: var(--color-date)">Likes ({{ mentions.likes | length }})</h4><br>
+  <div class="likes">
+    {% for item in mentions.likes %}
+      <a href="{{ item.url }}"><img src="{{ item.photo }}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <br>
+  {% if mentions.reposts %}
+  <h4 style="color: var(--color-date)">Reposts ({{ mentions.reposts | length }})</h4><br>
+  <div class="reposts">
+    {% for item in mentions.reposts %}
+      <a href="{{ item.url }}"><img src="{{ item.photo }}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
+    {% endfor %}
+  </div>
+    {% endif %}
+  <br>
   {% if mentions.comments %}
   <h4 style="color: var(--color-date)">Comments ({{ mentions.comments | length }})</h4><br>
   <div class="comments">
@@ -8,24 +26,6 @@
         <p class="comment-content">{{ item.content | safe }}</p>
         <p class="comment-date">{{ item.published | plainDate }}</p>
       </div>
-    {% endfor %}
-  </div>
-  {% endif %}
-<br>
-  {% if mentions.likes %}
-  <h4 style="color: var(--color-date)">Likes ({{ mentions.likes | length }})</h4><br>
-  <div class="likes">
-    {% for item in mentions.likes %}
-      <a href="{{ item.url }}"><img src="{{ item.photo }}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
-    {% endfor %}
-  </div>
-  {% endif %}
-<br>
-  {% if mentions.reposts %}
-  <h4 style="color: var(--color-date)">Reposts ({{ mentions.reposts | length }})</h4><br>
-  <div class="reposts">
-    {% for item in mentions.reposts %}
-      <a href="{{ item.url }}"><img src="{{ item.photo }}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
     {% endfor %}
   </div>
   {% endif %}

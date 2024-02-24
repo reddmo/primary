@@ -35,11 +35,11 @@ schema: blog
     </p>
 
     {{ content | safe }}
-    
+<p>
 {% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
 {% if  mentions.mentionCount > 0 %}
   {% include 'partials/webmentions.njk' %}
-{% endif %}
+{% endif %}</p>
 
   <h4 style="color: var(--color-date)">Other Posts</h4>
     {%- if collections.posts %}
@@ -47,9 +47,9 @@ schema: blog
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
 <ul>
-	{%- if previousPost %}{% include 'svg/chevrons-right.svg' %} Newer post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}<br>
+	{%- if previousPost %}{% include 'svg/chevrons-left.svg' %} <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}<br>
 	
-	{%- if nextPost %}{% include 'svg/chevrons-left.svg' %} Older post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+	{%- if nextPost %}{% include 'svg/chevrons-right.svg' %} <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
 </ul>
 {%- endif %}
 {%- endif %}
