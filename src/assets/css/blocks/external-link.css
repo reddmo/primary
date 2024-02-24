@@ -1,4 +1,4 @@
-article
+/* article
   [href^='http']:not([href*='localhost:8080']):not(
     [href*='stuff.reddmo.com']
   ):not(.button) {
@@ -18,15 +18,15 @@ article
   background-image: url('/assets/images/template/external.svg'); 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60% auto;
-  /* alternative text rules */
+  background-size: 60% auto; */
+  /* alternative text rules 
   content: '(enlace externo)';
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
-}
+  text-indent: 1em;  the width of the icon 
+} */
 
-articles
+/* articles
   [href^='http']:not([href*='localhost:8080']):not(
     [href*='stuff.reddmo.com']
   ):not(.button) {
@@ -44,9 +44,9 @@ articles
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60% auto;
-  /* alternative text rules */
+  alternative text rules
   content: '(enlace externo)';
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
-}
+  text-indent: 1em; the width of the icon 
+} */
