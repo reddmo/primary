@@ -8,9 +8,7 @@
 }
 
 .site-nav a {
-	/* --menu-color: var(--text-color);
- 	   --background-color: var(--bg-color); 
- 	   border-color: var(--color-date); */
+  color: var(--bg-color);
   padding: 0.3rem var(--space-xs);
   text-decoration: none;
   display: inline-block;
@@ -20,17 +18,13 @@
 
 /* Change the border-color on :hover and :focus */
 .site-nav a:where(:hover, :focus) {
-	/*  --background-color: var(--menu-color);
-  		--menu-color: var(--text-color); */
-  border-color: var(--color-link);
+  border-color: var(--color-date);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
 .site-nav [aria-current='page'],
 .site-nav [data-state='active'] {
-	/*  --background-color: var(--menu-color);
-  		--menu-color: var(--bg-color); 
-  border-color: none !important;*/
+	color: var(--color-head);
 }
 
 @media screen(md) {
@@ -42,34 +36,22 @@
   }
 
   .site-nav a {
-    border-color: transparent;
+    border-color: var(--color-link);
     text-decoration: none;
     color: var(--bg-color);
     padding: 0.3rem var(--space-xs);
-    /* --menu-color: var(--text-color);
-       --background-color: transparent; 
-       background-color: var(--background-color); 
-       text-decoration-line: none;
-       text-decoration-color: var(--text-decoration, transparent);
-       text-decoration-thickness: 3px;
-       text-underline-offset: 0.2em; */
   }
 
   /* Change the border-color on :hover and :focus */
   .site-nav a:where(:hover, :focus) {
+     border-color: var(--color-date);
   	 color: var(--text-color);
-     /* --text-decoration: var(--text-color-accent);
-		--menu-color: var(--text-color);
-    	--background-color: transparent; */
   }
 
   /* Change border-color and color for the active page */
   .site-nav [aria-current='page'],
   .site-nav [data-state='active'] {
   	color: var(--text-color);
- 	 /* --text-decoration: var(--text-color);
-  	 	--menu-color: var(--color-date);
-        --background-color: transparent; 
-     	border-color: var(--bg-color); */
+  	border-color: var(--color-head);
   }
 }
