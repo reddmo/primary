@@ -24,7 +24,7 @@
       <div class="comment">
         <a href="{{ item.author.url }}" class="comment-author"><img src="{{ item.author.photo}}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
         <p class="comment-content">{{ item.content | safe }}</p>
-        <p class="comment-date">{{ item.published | plainDate }}</p>
+        <p class="comment-date" style="font-size: var(--step-size-min-2)">{{ item.published | plainDate }}</p>
       </div>
     {% endfor %}
   </div>

@@ -8,7 +8,7 @@
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
-  font-size: var(--size-step-min-2);
+  font-size: var(--size-step-min-1);
   font-family: var(--font-base);
   line-height: 1.4;
   letter-spacing: var(--tracking);
