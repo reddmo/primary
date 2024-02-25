@@ -4,11 +4,8 @@ masonry: true
 ---
 
 <div class="wrapper">
-  <header class="full | section" style="--spot-color: var(--bg-color)">
-    <div class="section__inner flow region">
-    <!--     <h2 class="text-right text-base-light" style="color: transparent; -webkit-text-stroke: 2px #050709; text-indent: 60%">{{ title }}</h2> -->
-    </div>
-  <!--  {% include 'svg/divider-waves.svg' %} -->
+  <header class="full | section">
+    <div class="section__inner flow region"></div>
 
   </header>
 
@@ -20,7 +17,7 @@ masonry: true
 
   <section class="full | region">
     <div class="wrapper flow prose">
-      <h2>{{ blog.title }}</h2>
+      <h2 style="color: var(--color-head)">{{ blog.title }}</h2>
       <!-- blog intro text is optional. -->
 
       {% if blog.intro %}
