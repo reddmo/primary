@@ -1,6 +1,5 @@
 .card {
   background-color: var(--color-card);
-  border: .15em solid var(--bg-color-accent);
   color: var(--color-card-text);
   text-wrap: balance;
   padding: var(--space-m-l);
@@ -28,7 +27,7 @@
 
 .card:hover,
 .card:focus-within {
-  border: .15em solid var(--color-card-link);
+  border: 2px solid var(--color-card-link);
   text-decoration: none !important;
 }
 
