@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 500;
- /* accent-color: var(--color-primary); */
+  text-align: justify;
 }
 
 main {

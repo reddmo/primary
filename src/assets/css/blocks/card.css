@@ -4,12 +4,14 @@
   text-wrap: balance;
   padding: var(--space-m-l);
   border-radius: var(--border-radius);
+  border: 2px solid var(--color-card);
   max-inline-size: unset;
+  text-align: left !important;
   /* box-shadow: 5px 5px var(--color-head); */
 }
 
 .card ::selection {
-  color: var(--text-color);
+  color: var(--color-card-text);
   background-color: var(--color-card);
 }
 
