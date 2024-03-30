@@ -1,5 +1,10 @@
 {
     "blogroll": [
+     {
+        "name": "Public Sector AI",
+        "url": "https://publicsectorai.tech",
+        "feed": "https://publicsectorai.tech/feed.xml"
+      },
       {
         "name": "11tybundle",
         "url": "https://11tybundle.dev",
