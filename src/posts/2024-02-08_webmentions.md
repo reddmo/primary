@@ -66,4 +66,4 @@ module.exports = {
   plainDate
   };
 ```
-With those, I was able to get webmentions working. You'll see a couple of my own tests on [this post](https://stuff.reddmo.com/blog/the-human-touch-denouncing-the-use-of-ai-in-blog-writing/). It was a frustrating road to get to this point but worth it.
+With those, I was able to get webmentions working. You'll see a couple of my own tests on [this post](https://stuffandthings.lol/blog/the-human-touch-denouncing-the-use-of-ai-in-blog-writing/). It was a frustrating road to get to this point but worth it.

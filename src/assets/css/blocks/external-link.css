@@ -1,6 +1,6 @@
 /* article
   [href^='http']:not([href*='localhost:8080']):not(
-    [href*='stuff.reddmo.com']
+    [href*='stuffandthings.lol']
   ):not(.button) {
    padding-inline-end: 0.8em; 
 }
@@ -9,7 +9,7 @@
 
 article
   [href^='http']:not([href*='localhost:8080']):not(
-    [href*='stuff.reddmo.com']
+    [href*='stuffandthings.lol']
   ):not(.no-indicator)::after {
   position: absolute;
   display: inline-block;
@@ -28,14 +28,14 @@ article
 
 /* articles
   [href^='http']:not([href*='localhost:8080']):not(
-    [href*='stuff.reddmo.com']
+    [href*='stuffandthings.lol']
   ):not(.button) {
    padding-inline-end: 0.8em; 
 }
 
 articles
   [href^='http']:not([href*='localhost:8080']):not(
-    [href*='stuff.reddmo.com']
+    [href*='stuffandthings.lol']
   ):not(.no-indicator)::after {
   position: absolute;
   display: inline-block;

@@ -1,5 +1,5 @@
 module.exports = {
-  url: process.env.URL || 'https://stuff.reddmo.com',
+  url: process.env.URL || 'https://stuffandthings.lol',
   siteName: 'stuff&things',
   siteDescription:
     'some stuff & things',
@@ -13,7 +13,7 @@ module.exports = {
   authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
   creator: 'Jason Moser', // i.e. Lene Saile - creator's (developer) name.
   creatorEmail: 'admin@reddmo.com', // i.e. hola@lenesaile.com
-  creatorWebsite: 'https://stuff.reddmo.com', // i.e. https.://www.lenesaile.com
+  creatorWebsite: 'https://stuffandthings.lol', // i.e. https.://www.lenesaile.com
   creatorSocial: 'https://social.lol/@jasonm', // i.e. https.://www.lenesaile.com
   themeColor: 'var(--text-color)', //  Manifest: defines the default theme color for the application
   themeBgColor: 'var(--bg-color)', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
