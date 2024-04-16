@@ -73,7 +73,7 @@ blockquote :last-child {
 }
 
 svg {
-  block-size: 10ex;
+  block-size: 2ex;
   inline-size: auto;
   flex: none;
   color: var(--color-head);
