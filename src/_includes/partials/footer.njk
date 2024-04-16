@@ -42,8 +42,9 @@
 					{% endfor %}
         </nav>  
     </div>
-    
-  </div><br>
-{% include 'components/theme-switch.njk' %}
-<center><h1>{% include 'svg/CoffeePowered_02.svg' %} {% include 'svg/IAmNotARobot_02.svg' %}</h1> </center>
+  {% include 'components/theme-switch.njk' %}  
+  <div class="text-center"  style="font-size: var(--size-step-5); line-height: 1.0">{% include 'svg/CoffeePowered_02.svg' %} {% include 'svg/IAmNotARobot_02.svg' %}
+  </div>
+  </div>
+
 </footer>

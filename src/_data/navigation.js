@@ -11,12 +11,13 @@ module.exports = {
     {
       text: 'blog',
       url: '/blog/page-0/'
-    }
-  ],
-  bottom: [
+    },
     {
       text: 'blogroll',
       url: '/blogroll/'
     }
+  ],
+  bottom: [
+   
   ]
 };
