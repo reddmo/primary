@@ -44,7 +44,7 @@ const webmentionsByUrl = (webmentions, url) => {
 
   const pageWebmentions = webmentions
     .filter(
-      (mention) => mention["wm-target"] === "https://stuff.reddmo.com" + url
+      (mention) => mention["wm-target"] === "https://stuffandthings.lol" + url
     )
     .sort((a, b) => new Date(b.published) - new Date(a.published))
     .map(sanitize);
