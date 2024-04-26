@@ -9,6 +9,10 @@ module.exports = {
       url: '/about/'
     },
     {
+      text: 'now',
+      url: '/now/'
+    },
+    {
       text: 'blog',
       url: '/blog/page-0/'
     },
