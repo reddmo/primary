@@ -1,6 +1,6 @@
 ---
 title: now
-permalink: /now
+permalink: /now/index.html
 description: What am I up to?
 layout: page
 youtube: true
