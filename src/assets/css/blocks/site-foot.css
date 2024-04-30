@@ -1,12 +1,12 @@
 .site-foot {
   margin-block-start: var(--space-l-xl);
-  padding: var(--space-s-m);
+  padding: var(--space-m-l);
   color: var(--text-color);
 }
 
 .site-foot__inner {
   display: flex;
-  gap: var(--space-xs) var(--space-s);
+  gap: var(--space-s) var(--space-m);
   justify-content: center;
   align-items: center;
 }
@@ -16,8 +16,8 @@
 }
 
 .site-foot svg {
-  inline-size: 1em;
-  block-size: 0.9em;
+  inline-size: 1.5em;
+  block-size: 2em;
 }
 
 .site-foot .creator {

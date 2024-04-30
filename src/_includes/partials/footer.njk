@@ -5,7 +5,6 @@
   <div class="wrapper">
     <div class="site-foot__inner">
       <nav class="site-foot__inner text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
-
         {% for item in navigation.bottom %}
         <a class="menu"
           href="{{ item.url }}"
@@ -36,15 +35,14 @@
 							<a href="{{ value }}" rel="me">
 								<span class="visually-hidden">{{ key | capitalize }}</span>
 								<div aria-hidden="true">{% include 'svg/social-' + key + '.svg' %}</div>
-							</a>
+							</a><br>
 							{% endif %}
 
 					{% endfor %}
         </nav>  
     </div>
-  {% include 'components/theme-switch.njk' %}  
-  <div class="text-center"  style="font-size: var(--size-step-5); line-height: 1.0">{% include 'svg/CoffeePowered_02.svg' %} {% include 'svg/IAmNotARobot_02.svg' %}
-  </div>
+      {% include 'components/theme-switch.njk' %}
+<div class="text-center"  style="font-size: var(--size-step-5); line-height: 1.0">{% include 'svg/CoffeePowered_02.svg' %} {% include 'svg/IAmNotARobot_02.svg' %}</div>
   </div>
 
 </footer>
