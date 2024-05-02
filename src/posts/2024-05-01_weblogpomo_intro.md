@@ -1,5 +1,5 @@
 ---
-title: WeblogPomMo Intro 2024
+title: WeblogPoMo Intro 2024
 description: A kickoff to my WeblogPoMo 2024 adventure
 date: 2024-05-01
 tags: ['weblogpomo2024', 'blogging']
