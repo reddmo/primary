@@ -11,10 +11,10 @@ body {
   font-size: var(--size-step-min-1);
   font-family: var(--font-base);
   line-height: 1.4;
-  letter-spacing: var(--tracking);
+  letter-spacing: var(--tracking-m);
   display: flex;
   flex-direction: column;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 main {

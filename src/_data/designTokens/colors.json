@@ -4,11 +4,11 @@
   "items": [
     {
       "name": "Base Dark",
-      "value": "#1c1836"
+      "value": "#050709"
     },
     {
       "name": "Base Light",
-      "value": "#f2f1ef"
+      "value": "#eeeeee"
     },
     {
       "name": "Light Text",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Card Dark",
-      "value": "#423f58"
+      "value": "#292929"
     },  
     {
       "name": "Card Link Light",
@@ -60,7 +60,7 @@
     }, 
     {
       "name": "Link Dark",
-      "value": "#ffde00"
+      "value": "#19B5FE"
     },  
     {
       "name": "Card Border Light",
@@ -76,7 +76,7 @@
     },
     {
       "name": "Head Dark",
-      "value": "#ff6347"
+      "value": "#ff8c00"
     },
     {
       "name": "Date Light",

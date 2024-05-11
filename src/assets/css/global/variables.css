@@ -2,7 +2,7 @@
 
 :root {
   --gutter: var(--space-m-l);
-  --border-radius: 0.7rem;
+  --border-radius: 0.1rem;
   --transition-duration: 250ms;
   --transition-timing: ease;
   --wrapper-width: 85rem;

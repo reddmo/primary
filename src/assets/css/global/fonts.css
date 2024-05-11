@@ -4,7 +4,7 @@
     font-family: Verdana;
     font-style: normal;
     font-display: swap;
-    font-weight: 800;
+    font-weight: 500;
     src: local(''),   url(/assets/fonts/verdana/Verdana.woff2) format('woff2'),
     url(/assets/fonts/verdana/Verdana.woff) format('woff');
   }
@@ -13,7 +13,7 @@
     font-family: Verdana;
     font-style: normal;
     font-display: swap;
-    font-weight: 600;
+    font-weight: 500;
     src: local(''),   url(/assets/fonts/verdana/Verdana.woff2) format('woff2'),
     url(/assets/fonts/verdana/Verdana.woff) format('woff');
   }

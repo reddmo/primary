@@ -5,12 +5,12 @@
     {
       "name": "Display",
       "description": "Display font stack for headings and large text.",
-      "value": ["Palatino","Verdana","Redhat", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["Helvetica", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
       "name": "Base",
       "description": "Base font stack for body text.",
-      "value": ["Verdana","Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["Helvetica", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
       "name": "Mono",
